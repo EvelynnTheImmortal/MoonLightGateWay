@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Town.unity
-    guid: 3c6ab6dbf98a4bd42b5f0a7b94f9be49
+    path: Assets/2D-ARPG/ExampleScenes/Title.unity
+    guid: 67e8fb70d1d7ab442b093891fbc07125
   - enabled: 1
-    path: Assets/Scenes/Shop_1.unity
-    guid: 4a39070ba033c6b4a8fdb08416d71bc6
+    path: Assets/2D-ARPG/ExampleScenes/Camp.unity
+    guid: 4ac9d29b64f618d4a831cd86760f77cf
   - enabled: 1
-    path: Assets/Scenes/CountrySide.unity
-    guid: 4ff23f2a2c7283841aef6f03d87b7147
+    path: Assets/2D-ARPG/ExampleScenes/Field1.unity
+    guid: dfd911739024929418d7acff75a82e5b
   - enabled: 1
-    path: Assets/Scenes/Cave.unity
-    guid: 547ddf090848dcf489921f41932bdef1
+    path: Assets/2D-ARPG/ExampleScenes/Field2.unity
+    guid: ff54b861feca1a243834ff56d463bc55
   m_configObjects: {}
