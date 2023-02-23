@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestClientEV : MonoBehaviour
+public class BillboardQuestClientEV : MonoBehaviour
 {
 	public int questId = 1;
 	public GameObject questData;
@@ -10,7 +10,7 @@ public class QuestClientEV : MonoBehaviour
 	public bool enter = false;
 	[HideInInspector]
 	public int s = 0;
-	
+
 	private GameObject player;
 
 	public EventActivator talkingEvent;
@@ -27,31 +27,32 @@ public class QuestClientEV : MonoBehaviour
 	public string sendMsgWhenTakeQuest = "";
 	public string sendMsgWhenQuestComplete = "";
 	public bool repeatable = false;
-	
-	void Update(){
-		if(questFullEvent && questFullEvent.eventRunning)
+
+	void Update()
+	{
+		if (questFullEvent && questFullEvent.eventRunning)
 		{
 			return;
 		}
-		if(Input.GetKeyDown("e") && enter && thisActive)
+		if (Input.GetKeyDown("e") && enter && thisActive)
 		{
 			SetDialogue();
 		}
 	}
-	
+
 	public void SetDialogue()
 	{
-		if(!player)
+		if (!player)
 		{
 			player = GameObject.FindWithTag("Player");
 		}
 
-		int ongoing = player.GetComponent<QuestStat>().CheckQuestProgress(questId);
-		int finish = questData.GetComponent<QuestData>().questData[questId].finishProgress;
-		int qprogress = player.GetComponent<QuestStat>().questProgress[questId];
-		if(qprogress >= finish + 9)
+		int ongoing = player.GetComponent<SideQuestStat>().CheckQuestProgress(questId);
+		int finish = questData.GetComponent<SideQuestData>().questData[questId].finishProgress;
+		int qprogress = player.GetComponent<SideQuestStat>().SidequestProgress[questId];
+		if (qprogress >= finish + 9)
 		{
-			if(finishQuestEvent.runEvent > 0 || finishQuestEvent.eventRunning)
+			if (finishQuestEvent.runEvent > 0 || finishQuestEvent.eventRunning)
 			{
 				return;
 			}
@@ -60,9 +61,10 @@ public class QuestClientEV : MonoBehaviour
 			print("Already Clear");
 			return;
 		}
-		if(acceptQuest)
+		if (acceptQuest)
 		{
-			if(ongoing >= finish){ //Quest Complete
+			if (ongoing >= finish)
+			{ //Quest Complete
 				finishQuestEvent.player = player;
 				finishQuestEvent.ActivateEvent();
 				FinishQuest();
@@ -70,7 +72,8 @@ public class QuestClientEV : MonoBehaviour
 			else
 			{
 				//Ongoing
-				if(talkingEvent.runEvent > 0 || talkingEvent.eventRunning){
+				if (talkingEvent.runEvent > 0 || talkingEvent.eventRunning)
+				{
 					questFullEvent.player = player;
 					questFullEvent.ActivateEvent();
 					return;
@@ -81,8 +84,9 @@ public class QuestClientEV : MonoBehaviour
 		}
 		else
 		{
-			int ll = player.GetComponent<QuestStat>().questSlot.Length;
-			if(questFullEvent && player.GetComponent<QuestStat>().questSlot[ll - 1] > 0){
+			int ll = player.GetComponent<SideQuestStat>().SidequestSlot.Length;
+			if (questFullEvent && player.GetComponent<SideQuestStat>().SidequestSlot[ll - 1] > 0)
+			{
 				questFullEvent.player = player;
 				questFullEvent.ActivateEvent();
 				return;
@@ -93,84 +97,88 @@ public class QuestClientEV : MonoBehaviour
 			TakeQuest();
 		}
 	}
-	
+
 	public void TakeQuest()
 	{
 		//StartCoroutine(AcceptQuest());
 		AcceptQuest();
-		CloseTalk();	
+		CloseTalk();
 	}
-	
+
 	public void FinishQuest()
 	{
-		questData.GetComponent<QuestData>().QuestClear(questId , player);
-		player.GetComponent<QuestStat>().Clear(questId);
+		questData.GetComponent<SideQuestData>().QuestClear(questId, player);
+		player.GetComponent<SideQuestStat>().Clear(questId);
 		print("Clear");
 		questFinish = true;
-		if(sendMsgWhenQuestComplete != "")
+		if (sendMsgWhenQuestComplete != "")
 		{
 			SendMessage(sendMsgWhenQuestComplete);
 		}
 		CloseTalk();
-		if(repeatable)
+		if (repeatable)
 		{
-			player.GetComponent<QuestStat>().questProgress[questId] = 0;
+			player.GetComponent<SideQuestStat>().SidequestProgress[questId] = 0;
 			questFinish = false;
 		}
 	}
-	
+
 	public void AcceptQuest()
 	{
-		bool full = player.GetComponent<QuestStat>().AddQuest(questId);
-		if(full){
+		bool full = player.GetComponent<SideQuestStat>().AddQuest(questId);
+		if (full)
+		{
 			//Quest Full
 			/*if(questFullEvent){
 				questFullEvent.player = player;
 				questFullEvent.ActivateEvent();
 			}*/
-		}else
+		}
+		else
 		{
-			acceptQuest = player.GetComponent<QuestStat>().CheckQuestSlot(questId);
-			if(sendMsgWhenTakeQuest != "")
+			acceptQuest = player.GetComponent<SideQuestStat>().CheckQuestSlot(questId);
+			if (sendMsgWhenTakeQuest != "")
 			{
 				SendMessage(sendMsgWhenTakeQuest);
 			}
 		}
 	}
-	
+
 	public void CheckQuestCondition()
 	{
-		QuestData quest = questData.GetComponent<QuestData>();
-		int progress = player.GetComponent<QuestStat>().CheckQuestProgress(questId);
-		
-		if(progress >= quest.questData[questId].finishProgress)
+		SideQuestData quest = questData.GetComponent<SideQuestData>();
+		int progress = player.GetComponent<SideQuestStat>().CheckQuestProgress(questId);
+
+		if (progress >= quest.questData[questId].finishProgress)
 		{
 			//Quest Clear
-			quest.QuestClear(questId , player);
+			quest.QuestClear(questId, player);
 		}
 	}
-	
-	void OnTriggerEnter2D(Collider2D other){
-		if(!trigger)
+
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		if (!trigger)
 		{
 			return;
 		}
-		if(other.tag == "Player")
+		if (other.tag == "Player")
 		{
 			s = 0;
 			player = other.gameObject;
-			acceptQuest = player.GetComponent<QuestStat>().CheckQuestSlot(questId);
+			acceptQuest = player.GetComponent<SideQuestStat>().CheckQuestSlot(questId);
 			enter = true;
 			thisActive = true;
 		}
 	}
-	
+
 	void OnTriggerExit2D(Collider2D other)
 	{
-		if(!trigger){
+		if (!trigger)
+		{
 			return;
 		}
-		if(other.tag == "Player")
+		if (other.tag == "Player")
 		{
 			s = 0;
 			enter = false;
@@ -178,7 +186,7 @@ public class QuestClientEV : MonoBehaviour
 		}
 		thisActive = false;
 	}
-	
+
 	void CloseTalk()
 	{
 		//Time.timeScale = 1.0f;
@@ -186,11 +194,11 @@ public class QuestClientEV : MonoBehaviour
 		//Cursor.visible = false;
 		s = 0;
 	}
-	
+
 	public bool ActivateQuest(GameObject p)
 	{
 		player = p;
-		acceptQuest = player.GetComponent<QuestStat>().CheckQuestSlot(questId);
+		acceptQuest = player.GetComponent<SideQuestStat>().CheckQuestSlot(questId);
 		thisActive = false;
 		trigger = false;
 		SetDialogue();

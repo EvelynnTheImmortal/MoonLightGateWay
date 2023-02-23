@@ -10,6 +10,7 @@ public class UiMaster : MonoBehaviour {
 	public SkillTreeUi skillTree;
 	public InventoryUi inventoryWindow;
 	public QuestUi questWindow;
+	public SideQuestUI sideQuestWindow;
 
 	public GameObject lvUpWarningStatus;
 	public GameObject lvUpWarningSkill;
@@ -146,6 +147,7 @@ public class UiMaster : MonoBehaviour {
 			CloseAllMenu();
 			questWindow.gameObject.SetActive(true);
 			questWindow.GetComponent<QuestUi>().ResetPage();
+			sideQuestWindow.GetComponent<SideQuestUI>().ResetPage();
 			GlobalStatus.menuOn = true;
 			if(newQuestWarning){
 				newQuestWarning.SetActive(false);

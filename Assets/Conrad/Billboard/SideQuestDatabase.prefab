@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1123886456926462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4272777125183732}
+  - component: {fileID: 8027834315189528803}
+  m_Layer: 0
+  m_Name: SideQuestDatabase
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4272777125183732
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123886456926462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1372126, y: 2.6766183, z: 0.16015625}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8027834315189528803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1123886456926462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c656c49bdb2f3446aeb0022d7046793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SQ: []
+  SideQuestNum: 0
+  ButtonPrefabContainer: {fileID: 0}
+  ButtonPrefabs: []
+  Quest2: {fileID: 2106053589449351918, guid: a4f8b68d75de9264f9395c4f66a85592, type: 3}
+  itemData: {fileID: 1772679060830740, guid: 1a9cf2bf4d78c4540a7a26e6a66cda69, type: 3}
+  questData:
+  - questName: 
+    description: 
+    finishProgress: 5
+    rewardCash: 100
+    rewardExp: 100
+    rewardItemID: 
+    rewardEquipmentID: 
+    showProgress: 1
+    cantCancel: 0
+  - questName: Kill 6 Slimes
+    description: Kill 6 slimes
+    finishProgress: 6
+    rewardCash: 100
+    rewardExp: 100
+    rewardItemID: 
+    rewardEquipmentID: 
+    showProgress: 1
+    cantCancel: 0
+  - questName: 
+    description: 
+    finishProgress: 5
+    rewardCash: 100
+    rewardExp: 100
+    rewardItemID: 
+    rewardEquipmentID: 
+    showProgress: 1
+    cantCancel: 0
