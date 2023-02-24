@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour{
 	public int[] equipment = new int[8];
 
 	public int weaponEquip = 0;
-	public bool allowWeaponUnequip = false;
+    public bool allowWeaponUnequip = false;
 	public int subWeaponEquip = 0;
 	public int armorEquip = 0;
 	public int hatEquip = 0;

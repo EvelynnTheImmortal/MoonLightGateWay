@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScrollWeaponSwap : MonoBehaviour
+public class ScrollWeapo : MonoBehaviour
 {
     public GameObject weapon1;
     public GameObject weapon2;
     public GameObject weapon3;
+
+    public ItemData database;
 
     private int currentWeapon = 0;
 
