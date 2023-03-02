@@ -402,50 +402,55 @@ public class AttackTrigger : MonoBehaviour{
 		}
 
 		// Scroll up to select the next shortcut
-    if (Input.GetAxis("Mouse ScrollWheel") > 0f && !onAttacking)
-    {
+     if (Input.GetAxis("Mouse ScrollWheel") > 0f && !onAttacking)
+     {
         currentShortcutIndex++;
         if (currentShortcutIndex > 11) currentShortcutIndex = 0;
-        UseShortcut(currentShortcutIndex);
-    }
+        //UseShortcut(currentShortcutIndex);
+     }
 
-    // Scroll down to select the previous shortcut
-    if (Input.GetAxis("Mouse ScrollWheel") < 0f && !onAttacking)
-    {
+     // Scroll down to select the previous shortcut
+     if (Input.GetAxis("Mouse ScrollWheel") < 0f && !onAttacking)
+     {
         currentShortcutIndex--;
         if (currentShortcutIndex < 0) currentShortcutIndex = 11;
-        UseShortcut(currentShortcutIndex);
-    }
+        //UseShortcut(currentShortcutIndex);
+     }
 
-    // Use middle mouse button to use the currently selected shortcut
-    if (Input.GetMouseButtonDown(2) && !onAttacking)
+     // Use middle mouse button to use the currently selected shortcut
+     if (Input.GetKeyDown("r") && !onAttacking)
+     {
+        UseShortcut(currentShortcutIndex);
+     }
+	}
+
+    public void UseShortcut(int slot)
     {
-        UseShortcut(currentShortcutIndex);
+        if (shortcuts.Length < slot + 1)
+        {
+            return;
+        }
+        if (shortcuts[slot].type == ShortcutType.Skill && !onAttacking)
+        {
+            //Skill
+            skSelect = slot;
+            TriggerSkill(skSelect);
+        }
+        else if (shortcuts[slot].type == ShortcutType.Equipment)
+        {
+            //Equipment
+            inv.EquipItemFromID(shortcuts[slot].id);
+            UpdateShortcut();
+        }
+        else if (shortcuts[slot].type == ShortcutType.UsableItem)
+        {
+            //Item
+            inv.UseItemFromID(shortcuts[slot].id);
+            UpdateShortcut();
+        }
     }
-	}
 
-	public void UseShortcut(int slot){
-		if(shortcuts.Length < slot +1){
-			return;
-		}
-		if(shortcuts[slot].type == ShortcutType.Skill){
-			//Skill
-			skSelect = slot;
-			TriggerSkill(skSelect);
-		}
-		if(shortcuts[slot].type == ShortcutType.Equipment){
-			//Equipment
-			inv.EquipItemFromID(shortcuts[slot].id);
-			UpdateShortcut();
-		}
-		if(shortcuts[slot].type == ShortcutType.UsableItem){
-			//Item
-			inv.UseItemFromID(shortcuts[slot].id);
-			UpdateShortcut();
-		}
-	}
-
-	public Image draggingItemIcon;
+    public Image draggingItemIcon;
 	private int pickupShortcutId = 0;
 	private int pickupShortcutType = 0;
 	private bool onShortCutArea = false;
@@ -455,7 +460,7 @@ public class AttackTrigger : MonoBehaviour{
 	private int swapSlot = 0;
 	private ShortcutData tempShortcut;
 
-	public void UpdateShortcut(){
+    public void UpdateShortcut(){
 		for(int a = 0; a < shortcutUi.Length; a++){
 			if(shortcuts[a].type == ShortcutType.None){
 				shortcutUi[a].iconImage.gameObject.SetActive(false);
@@ -495,8 +500,9 @@ public class AttackTrigger : MonoBehaviour{
 				shortcutUi[a].quantityText.gameObject.SetActive(false);
 				shortcutUi[a].iconImage.sprite = skillDB.skill[shortcuts[a].id].icon;
 			}
-		}
-	}
+        }
+
+    }
 
 	public void EnterShortcutArea(int slot){
 		print("Shortcut Area = " + slot);
