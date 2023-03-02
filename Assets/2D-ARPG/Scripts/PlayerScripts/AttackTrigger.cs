@@ -169,6 +169,9 @@ public class AttackTrigger : MonoBehaviour{
 		//gameObject.layer = 10;
 		//Physics.IgnoreLayerCollision(10 , 11 , true);
 	}
+
+	public float scrollSpeed = 0.1f; // Speed of scrolling
+    private int currentShortcutIndex = 0; // Index of current shortcut selected
 	
 	void Update(){
 		if(Input.GetKeyDown("e")){
@@ -397,6 +400,28 @@ public class AttackTrigger : MonoBehaviour{
 		if(Input.GetKeyDown("=") && !onAttacking){
 			UseShortcut(11);
 		}
+
+		// Scroll up to select the next shortcut
+    if (Input.GetAxis("Mouse ScrollWheel") > 0f && !onAttacking)
+    {
+        currentShortcutIndex++;
+        if (currentShortcutIndex > 11) currentShortcutIndex = 0;
+        UseShortcut(currentShortcutIndex);
+    }
+
+    // Scroll down to select the previous shortcut
+    if (Input.GetAxis("Mouse ScrollWheel") < 0f && !onAttacking)
+    {
+        currentShortcutIndex--;
+        if (currentShortcutIndex < 0) currentShortcutIndex = 11;
+        UseShortcut(currentShortcutIndex);
+    }
+
+    // Use middle mouse button to use the currently selected shortcut
+    if (Input.GetMouseButtonDown(2) && !onAttacking)
+    {
+        UseShortcut(currentShortcutIndex);
+    }
 	}
 
 	public void UseShortcut(int slot){
