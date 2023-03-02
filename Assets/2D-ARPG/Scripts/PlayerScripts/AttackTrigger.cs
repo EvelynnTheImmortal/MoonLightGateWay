@@ -385,6 +385,18 @@ public class AttackTrigger : MonoBehaviour{
 		if(Input.GetKeyDown("8") && !onAttacking){
 			UseShortcut(7);
 		}
+		if(Input.GetKeyDown("9") && !onAttacking){
+			UseShortcut(8);
+		}
+		if(Input.GetKeyDown("0") && !onAttacking){
+			UseShortcut(9);
+		}
+		if(Input.GetKeyDown("-") && !onAttacking){
+			UseShortcut(10);
+		}
+		if(Input.GetKeyDown("=") && !onAttacking){
+			UseShortcut(11);
+		}
 	}
 
 	public void UseShortcut(int slot){
