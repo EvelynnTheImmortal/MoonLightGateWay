@@ -52,7 +52,7 @@ public class TopdownInputController2D : MonoBehaviour {
 		if(onDashing){
 			return;
 		}
-		if(canDash && Input.GetKeyDown(KeyCode.Mouse1)){
+		if(canDash && Input.GetKeyDown(KeyCode.Space)){
 			StartCoroutine("Dash");
 		}
 
@@ -92,7 +92,7 @@ public class TopdownInputController2D : MonoBehaviour {
 			return;
 		}
 		if(onDashing){
-			if(Input.GetKeyUp(KeyCode.Mouse1) || atk.onAttacking){
+			if(Input.GetKeyUp(KeyCode.Space) || atk.onAttacking){
 				CancelDash();
 			}
 
@@ -139,15 +139,28 @@ public class TopdownInputController2D : MonoBehaviour {
 			onDashing = true;
 			anim.SetTrigger("dash");
 			anim.ResetTrigger("cancelDash");
+			canDash = false;
 			yield return new WaitForSeconds(dashDuration);
 			CancelDash();
+			
 		}
 	}
 	
 	public void CancelDash(){
 		StopCoroutine("Dash");
+		
 		anim.SetTrigger("cancelDash");
 		onDashing = false;
+		StartCoroutine(ResetDash());
+	}
+
+	IEnumerator ResetDash()
+	{
+		StopCoroutine("Dash");
+		yield return new WaitForSeconds(2f);
+		canDash = true;
+		
+		StopCoroutine("ResetDash");
 	}
 
 }

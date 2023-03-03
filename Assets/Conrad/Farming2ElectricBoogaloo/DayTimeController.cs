@@ -42,6 +42,7 @@ public class DayTimeController : MonoBehaviour
 
     private void Update()
     {
+        globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
         time += Time.deltaTime * timescale;
         int hh = (int)Hours;
         int mm = (int)Minutes;

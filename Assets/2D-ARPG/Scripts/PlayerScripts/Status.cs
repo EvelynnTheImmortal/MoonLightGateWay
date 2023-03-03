@@ -479,6 +479,7 @@ public class Status : MonoBehaviour {
 	public Vector3 knock = Vector3.zero;
 	[HideInInspector]
 	public float knockForce = 700;
+	
 
 	public void Flinch(Vector3 dir){
 		if(GlobalStatus.freezePlayer || stability){

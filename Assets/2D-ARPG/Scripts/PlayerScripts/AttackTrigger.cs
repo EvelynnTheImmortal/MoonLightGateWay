@@ -19,6 +19,8 @@ public class AttackTrigger : MonoBehaviour{
 	public int weaponType = 0;
 
 	public bool notActive = false;
+	public GameObject[] uiElements;
+    private int currentElementIndex = 0;
 
 	public int requireItemId = 0;
 	public string requireItemName = "";
@@ -418,10 +420,40 @@ public class AttackTrigger : MonoBehaviour{
      }
 
      // Use middle mouse button to use the currently selected shortcut
-     if (Input.GetKeyDown("r") && !onAttacking)
+     if (Input.GetMouseButtonDown(1) && !onAttacking)
      {
         UseShortcut(currentShortcutIndex);
      }
+
+	 // Check if the user has scrolled up or down
+        float scrollDelta = Input.mouseScrollDelta.y;
+        if (scrollDelta > 0)
+        {
+            // Increase the current element index
+            currentElementIndex = (currentElementIndex + 1) % uiElements.Length;
+        }
+        else if (scrollDelta < 0)
+        {
+            // Decrease the current element index
+            currentElementIndex = (currentElementIndex + uiElements.Length - 1) % uiElements.Length;
+        }
+
+        // Loop through all UI elements
+        for (int i = 0; i < uiElements.Length; i++)
+        {
+            // Check if current index matches current UI element
+            if (i == currentElementIndex)
+            {
+                // Enable the UI element
+                uiElements[i].SetActive(true);
+            }
+            else
+            {
+                // Disable the UI element
+                uiElements[i].SetActive(false);
+            }
+        }
+
 	}
 
     public void UseShortcut(int slot)
