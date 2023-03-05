@@ -15,7 +15,7 @@ public class MonsterHealthBar : MonoBehaviour {
 	
 	void Update(){
 		transform.rotation = Quaternion.identity;
-		int maxHp = stat.maxHealth;
+		float maxHp = stat.maxHealth;
 		float hp = stat.health;
 		
 		float curHp = hp/maxHp;

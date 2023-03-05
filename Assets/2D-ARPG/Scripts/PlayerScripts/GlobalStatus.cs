@@ -22,12 +22,12 @@ public class GlobalStatus : MonoBehaviour {
 	public static int mdef = 0;
 	public static int exp = 0;
 	public static int maxExp = 100;
-	public static int maxHealth = 100;
+	public static float maxHealth = 100;
 	public static int maxMana = 100;
 	public static int statusPoint = 0;
 	public static int skillPoint = 0;
 
-	public static int health = 100;
+	public static float health = 100;
 	public static int mana = 100;
 	
 	public static int cash = 0;

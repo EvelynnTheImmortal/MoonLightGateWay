@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 12
-  damageMax: 25
+  damageMax: 16
   playerAttack: 5
   totalDamage: 0
   variance: 15
@@ -202,7 +202,7 @@ MonoBehaviour:
   effectAtTarget: 1
   flinch: 1
   knockBackForces: 3
-  penetrate: 1
+  penetrate: 0
   oneHitPerEnemy: 1
   AttackType: 0
   element: 0

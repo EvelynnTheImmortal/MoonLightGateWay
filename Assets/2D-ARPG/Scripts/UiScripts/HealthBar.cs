@@ -25,7 +25,7 @@ public class HealthBar : MonoBehaviour {
 		}
 		Status stat = player.GetComponent<Status>();
 		
-		int maxHp = stat.totalStat.health;
+		float maxHp = stat.totalStat.health;
 		float hp = stat.health;
 		int maxMp = stat.totalStat.mana;
 		float mp = stat.mana;

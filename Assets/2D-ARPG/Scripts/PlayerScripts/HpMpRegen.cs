@@ -35,7 +35,7 @@ public class HpMpRegen : MonoBehaviour {
 	}
 	
 	void HPRecovery(){
-		int amount = stat.totalStat.health * hpRegen / 100;
+		float amount = stat.totalStat.health * hpRegen / 100;
 		if(amount <= 1){
 			amount = 1;
 		}

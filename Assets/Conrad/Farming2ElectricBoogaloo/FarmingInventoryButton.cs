@@ -9,6 +9,7 @@ public class FarmingInventoryButton : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image icon;
     [SerializeField] TMP_Text text;
+    [SerializeField] Image highlight;
 
     int myIndex;
 
@@ -43,8 +44,12 @@ public class FarmingInventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        ItemContainer inventory = GameManager.instance.inventoryContainer;
-        GameManager.instance.dragAndDropController.OnClick(inventory.slots[myIndex]);
-        transform.parent.GetComponent<FarmingInventoryPanel>().Show();
+        FarmingItemPanel itemPanel = transform.parent.GetComponent<FarmingItemPanel>();
+        itemPanel.OnClick(myIndex);
+    }
+
+    public void Highlight(bool b)
+    {
+        highlight.gameObject.SetActive(b);
     }
 }

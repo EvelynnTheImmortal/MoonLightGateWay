@@ -17,8 +17,10 @@ public class AttackTrigger : MonoBehaviour{
 
 	public BulletStatus[] attackPrefab = new BulletStatus[1];
 	public int weaponType = 0;
+	public TopdownInputController2D pC;
+    public bool isDelayed = false;
 
-	public bool notActive = false;
+    public bool notActive = false;
 	public GameObject[] uiElements;
     private int currentElementIndex = 0;
 
@@ -167,10 +169,12 @@ public class AttackTrigger : MonoBehaviour{
 		pos.z = 0;
 		transform.position = pos;
 
-		//UpdateShortcut();
-		//gameObject.layer = 10;
-		//Physics.IgnoreLayerCollision(10 , 11 , true);
-	}
+		//pC = GameObject.Find("Knight-Player").GetComponent<>();
+
+        //UpdateShortcut();
+        //gameObject.layer = 10;
+        //Physics.IgnoreLayerCollision(10 , 11 , true);
+    }
 
 	public float scrollSpeed = 0.1f; // Speed of scrolling
     private int currentShortcutIndex = 0; // Index of current shortcut selected
@@ -231,16 +235,20 @@ public class AttackTrigger : MonoBehaviour{
 		if(!showButton && canvasElement.activatorButton && canvasElement.activatorButton.activeSelf){
 			canvasElement.activatorButton.SetActive(false);
 		}
-
+		
 		//Guard Button
 		if(canBlock && Input.GetKey("f") && !onAttacking && !stat.block){
 			stat.mainSprite.ResetTrigger("cancelGuard");
 			stat.GuardUp(blockingAnimationTrigger);
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		}
+			pC.speed = .5f;
+           
+        }
 		if(stat.block && Input.GetKeyUp("f") || stat.block && GlobalStatus.freezeAll || stat.block && GlobalStatus.freezePlayer){
-			stat.GuardBreak("cancelGuard");
-		}
+            
+            stat.GuardBreak("cancelGuard");
+            pC.speed = 4.5f;
+            
+        }
 
 		//------Aiming---------
 		if(attackPoint && aimAtMouse){
@@ -287,14 +295,28 @@ public class AttackTrigger : MonoBehaviour{
 			GetComponent<Rigidbody2D>().velocity = stat.knock * stat.knockForce;
 			return;
 		}
-		if(stat.block){
-			if(!stat.flinch){
-				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-			}
+		if (stat.block)
+		{
+            
+            if (!stat.flinch)
+			{
+                pC.speed = .5f;
+                //GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            }
+
+
 			return;
 		}
+		if (!stat.block)
+		{
+			pC.speed = 4.5f;
 
-		if(meleefwd){
+		}
+
+
+
+		if (meleefwd){
 			if(GetComponent<Rigidbody2D>().gravityScale > 0){
 				GetComponent<Rigidbody2D>().velocity = new Vector2(0 , GetComponent<Rigidbody2D>().velocity.y);
 			}else{
@@ -302,7 +324,7 @@ public class AttackTrigger : MonoBehaviour{
 			}
 			if(aimAtMouse && GetComponent<Rigidbody2D>().gravityScale == 0){
 				Vector3 dir = attackPoint.TransformDirection(Vector3.right);
-				//GetComponent<Rigidbody2D>().AddForce(dir * 3200 * Time.deltaTime);
+				GetComponent<Rigidbody2D>().AddForce(dir * 3200 * Time.deltaTime);
 
 				GetComponent<Rigidbody2D>().velocity = dir * 2.5f;
 			}else{
@@ -323,29 +345,55 @@ public class AttackTrigger : MonoBehaviour{
 			return;
 		}
 
-		//Normal Trigger
-		if(Input.GetButton("Fire1") && Time.time > nextFire && !onAttacking && !mobileMode && !onShortCutArea && !GlobalStatus.menuOn && !charging && !onButtonMenu){
-			if(Time.time > (nextFire + 0.5f)){
-				c = 0;
-			}
-			//Attack Combo
-			if(attackAnimationTrigger.Length >= 1){
-				StartCoroutine(AttackCombo());
-			}
+        //Normal Trigger
+        
+		
+		
+			
+            if (Input.GetButton("Fire1") && Time.time > nextFire && !onAttacking && !mobileMode && !onShortCutArea && !GlobalStatus.menuOn && !charging && !onButtonMenu)
+            {
+				if (isDelayed == false)
+				{
+                    isDelayed = true;
+                    if (Time.time > (nextFire + 0.8f))
+                    {
+                        c = 0;
+                    }
+                    //Attack Combo
+                    if (attackAnimationTrigger.Length >= 1)
+                    {
+                        StartCoroutine(AttackCombo());
+                    }
 
-			//Charging Weapon if the Weapon can charge and player hold the Attack Button
-			if(charge.Length > 0 && !charging && Time.time > nextFire /2){
-				charging = true;
-				int b = charge.Length -1;
-				while(b >= 0){
-					charge[b].currentChargeTime = Time.time + charge[b].chargeTime;
-					b--;
+                    //Charging Weapon if the Weapon can charge and player hold the Attack Button
+                    if (charge.Length > 0 && !charging && Time.time > nextFire / 2)
+                    {
+                        charging = true;
+                        int b = charge.Length - 1;
+                        while (b >= 0)
+                        {
+                            charge[b].currentChargeTime = Time.time + charge[b].chargeTime;
+                            b--;
+                        }
+                    }
+					StartCoroutine(RechargeAttack());
 				}
-			}
-		}
+                
+            }
+			
+        
 
-		//Charging Effect
-		if(charging){
+        IEnumerator RechargeAttack()
+        {
+            yield return new WaitForSeconds(.8f);
+            isDelayed = false;
+            Debug.Log("Recharged");
+            StopCoroutine(RechargeAttack());
+        }
+
+
+        //Charging Effect
+        if (charging){
 			int b = charge.Length -1;
 			while(b >= 0){
 				if(Time.time > charge[b].currentChargeTime){
@@ -775,30 +823,46 @@ public class AttackTrigger : MonoBehaviour{
 		pickupShortcutId = 0;
 		pickupShortcutType = 0;
 	}
+	
+	public void TriggerAttack()
+	{	
+            
+			 
+            if (Time.timeScale == 0.0f || GetComponent<Status>().freeze || GlobalStatus.freezePlayer)
+            {
+                return;
+            }
+            if (Time.time > nextFire && !onAttacking)
+            {
 
-	public void TriggerAttack(){
-		if(Time.timeScale == 0.0f || GetComponent<Status>().freeze || GlobalStatus.freezePlayer){
-			return;
-		}
-		if(Time.time > nextFire && !onAttacking){
-			if(Time.time > (nextFire + 0.5f)){
-				c = 0;
-			}
-			//Attack Combo
-			if(attackAnimationTrigger.Length >= 1){
-				StartCoroutine(AttackCombo());
-			}
-			//Charging Weapon if the Weapon can charge and player hold the Attack Button
-			if(charge.Length > 0 && !charging && Time.time > nextFire /2){
-				charging = true;
-				int b = charge.Length -1;
-				while(b >= 0){
-					charge[b].currentChargeTime = Time.time + charge[b].chargeTime;
-					b--;
-				}
-			}
-		}
+                if (Time.time > (nextFire + 0.5f))
+                { 
+                    c = 0;
+                }
+                //Attack Combo
+                if (attackAnimationTrigger.Length >= 1)
+                {
+                    
+                    StartCoroutine(AttackCombo());
+                }
+                //Charging Weapon if the Weapon can charge and player hold the Attack Button
+                if (charge.Length > 0 && !charging && Time.time > nextFire / 2)
+                {
+                    charging = true;
+                    int b = charge.Length - 1;
+                    while (b >= 0)
+                    {
+                        charge[b].currentChargeTime = Time.time + charge[b].chargeTime;
+                        b--;
+                    }
+                }
+            }
+            
+
+        
+
 	}
+	
 
 	public void ReleaseCharge(){
 		if(charging){
@@ -1142,26 +1206,32 @@ public class AttackTrigger : MonoBehaviour{
 		actvateObj.SendMessage(actvateMsg , SendMessageOptions.DontRequireReceiver);
 	}
 
-	public void TriggerGuard(){
-		if(canBlock && !onAttacking && !stat.block){
-			stat.mainSprite.ResetTrigger("cancelGuard");
-			stat.GuardUp(blockingAnimationTrigger);
-			GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-		}
-	}
+	//public void TriggerGuard()
+	//{
+	//	if (canBlock && !onAttacking && !stat.block)
+	//	{
+	//		stat.mainSprite.ResetTrigger("cancelGuard");
+	//		stat.GuardUp(blockingAnimationTrigger);
+	//		GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+	//		pC.speed = 2.5f;
+	//	}
+	//}
 
-	public void CancelGuard(){
-		if(stat.block){
-			stat.GuardBreak("cancelGuard");
-		}
-	}
+	//public void CancelGuard()
+	//{
+	//	if (stat.block)
+	//	{
+	//		stat.GuardBreak("cancelGuard");
+	//		pC.speed = 4.5f;
+	//	}
+	//}
 }
 
 [System.Serializable]
 public class ChargeAtk{
 	public GameObject chargeEffect;
 	public BulletStatus chargeAttackPrefab;
-	public float chargeTime = 1.0f;
+	public float chargeTime = 1f;
 	public string chargeAnimationTrigger;
 	public float attackCast = 0.18f;
 	public float attackDelay = 0.12f;
@@ -1169,5 +1239,5 @@ public class ChargeAtk{
 	public AudioClip soundEffect;
 	public AudioClip soundEffect2;
 	[HideInInspector]
-	public float currentChargeTime = 1.0f;
+	public float currentChargeTime = 1f;
 }

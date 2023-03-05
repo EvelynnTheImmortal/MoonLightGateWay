@@ -2,41 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FarmingInventoryPanel : MonoBehaviour
+public class FarmingInventoryPanel : FarmingItemPanel
 {
-    [SerializeField] ItemContainer inventory;
-    [SerializeField] List<FarmingInventoryButton> buttons;
-    private void Start()
+    public override void OnClick(int id)
     {
-        SetIndex();
-        Show(); 
-    }
-
-    private void OnEnable()
-    {
+        GameManager.instance.dragAndDropController.OnClick(inventory.slots[id]);
         Show();
-    }
-
-    private void SetIndex()
-    {
-        for (int i = 0; i < inventory.slots.Count; i++)
-        {
-            buttons[i].SetIndex(i);
-        }
-    }
-
-    public void Show()
-    {
-        for (int i = 0; i < inventory.slots.Count; i++)
-        {
-            if (inventory.slots[i].item == null)
-            {
-                buttons[i].Clean();
-            }
-            else
-            {
-                buttons[i].Set(inventory.slots[i]);
-            }
-        }
     }
 }

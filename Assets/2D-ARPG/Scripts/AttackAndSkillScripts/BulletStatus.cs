@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BulletStatus : MonoBehaviour {
 	public int damage = 10;
-	public int damageMax = 20;
+	public int damageMax = 12;
 	
 	[HideInInspector]
 	public int playerAttack = 5;
-	public int totalDamage = 0;
+	public float totalDamage = 0;
 	public int variance = 15;
 	[Range(0, 100)]
 	public int criticalChance = 0;
@@ -128,7 +128,7 @@ public class BulletStatus : MonoBehaviour {
 				int per = Random.Range(0, 100);
 				if(per <= criticalChance){
 					dmgPop.GetComponent<DamagePopup>().critical = true;
-					totalDamage *= 2;
+					totalDamage *= 1.2f;
 				}
 			}
 			
@@ -158,10 +158,12 @@ public class BulletStatus : MonoBehaviour {
 				SpawnBulletChild();
 			}
 			//Drain HP
-			if(drainHp > 0 && shooter && popDamage != "Miss" && popDamage != "Evaded" && popDamage != "Guard" && popDamage != "Invulnerable"){
+			if(drainHp > 0 && shooter && popDamage != "Miss" && popDamage != "Evaded"  && popDamage != "Invulnerable")
+			{
 				int lf = int.Parse(popDamage) * drainHp;
 				lf /= 100;
-				if(lf < 1){
+				if(lf < 1)
+				{
 					lf = 1;
 				}
 				Vector3 hpos = shooter.transform.position;

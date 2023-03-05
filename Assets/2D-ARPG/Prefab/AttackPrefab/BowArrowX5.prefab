@@ -1091,7 +1091,7 @@ MonoBehaviour:
   playerAttack: 5
   totalDamage: 0
   variance: 15
-  criticalChance: 5
+  criticalChance: 0
   inflictStatus: []
   shooterTag: Player
   shooter: {fileID: 0}

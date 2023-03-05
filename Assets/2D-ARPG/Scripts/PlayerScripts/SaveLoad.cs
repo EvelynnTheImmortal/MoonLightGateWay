@@ -47,12 +47,12 @@ public class SaveLoad : MonoBehaviour {
 		PlayerPrefs.SetInt("PlayerMDEF" +saveSlot.ToString(), GlobalStatus.mdef);
 		PlayerPrefs.SetInt("PlayerEXP" +saveSlot.ToString(), GlobalStatus.exp);
 		PlayerPrefs.SetInt("PlayerMaxEXP" +saveSlot.ToString(), GlobalStatus.maxExp);
-		PlayerPrefs.SetInt("PlayerMaxHP" +saveSlot.ToString(), GlobalStatus.maxHealth);
+		PlayerPrefs.SetFloat ("PlayerMaxHP" +saveSlot.ToString(), GlobalStatus.maxHealth);
 		PlayerPrefs.SetInt("PlayerMaxMP" +saveSlot.ToString(), GlobalStatus.maxMana);
 		PlayerPrefs.SetInt("PlayerSTP" +saveSlot.ToString(), GlobalStatus.statusPoint);
 		PlayerPrefs.SetInt("PlayerSKP" +saveSlot.ToString(), GlobalStatus.skillPoint);
 
-		PlayerPrefs.SetInt("PlayerHP" +saveSlot.ToString(), GlobalStatus.health);
+		PlayerPrefs.SetFloat("PlayerHP" +saveSlot.ToString(), GlobalStatus.health);
 		PlayerPrefs.SetInt("PlayerMP" +saveSlot.ToString(), GlobalStatus.mana);
 		
 		PlayerPrefs.SetInt("Cash" +saveSlot.ToString(), GlobalStatus.cash);

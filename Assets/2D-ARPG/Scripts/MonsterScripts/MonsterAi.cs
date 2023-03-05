@@ -311,7 +311,7 @@ public class MonsterAi : MonoBehaviour {
 				GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 			}
 			//----------------Idle Mode--------------
-			int getHealth = GetComponent<Status>().maxHealth - GetComponent<Status>().health;
+			float getHealth = GetComponent<Status>().maxHealth - GetComponent<Status>().health;
 			
 			if(distance < detectRange || getHealth > 0){
 				followState = AIState.Moving;

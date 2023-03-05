@@ -10,7 +10,7 @@ using UnityEngine;
 public class TopdownInputController2D : MonoBehaviour {
 	private Animator anim;
 	private Rigidbody2D rb;
-	public float speed = 6;
+	public float speed = 4.5f;
 	private float dirX, dirY;
 	private Status stat;
 	private bool moving = false;
@@ -85,7 +85,7 @@ public class TopdownInputController2D : MonoBehaviour {
 	}
 	
 	void FixedUpdate(){
-		if(Time.timeScale == 0.0f || stat.freeze || GlobalStatus.freezeAll || GlobalStatus.freezePlayer || stat.flinch || !stat.canControl || stat.block){
+		if(Time.timeScale == 0.0f || stat.freeze || GlobalStatus.freezeAll || GlobalStatus.freezePlayer || stat.flinch || !stat.canControl /*|| stat.block*/){
 			moveHorizontal = 0;
 			moveVertical = 0;
 			//rb.velocity = Vector2.zero;

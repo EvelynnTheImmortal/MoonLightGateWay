@@ -101,11 +101,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 8
-  damageMax: 15
+  damageMax: 13
   playerAttack: 5
   totalDamage: 0
   variance: 15
-  criticalChance: 5
+  criticalChance: 3
   inflictStatus: []
   shooterTag: Player
   shooter: {fileID: 0}

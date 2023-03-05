@@ -15,8 +15,8 @@ public class Status : MonoBehaviour {
 	public int mdef = 0;
 	public int exp = 0;
 	public int maxExp = 100;
-	public int maxHealth = 100;
-	public int health = 100;
+	public float maxHealth = 100;
+	public float health = 100;
 	public int maxMana = 100;
 	public int mana = 100;
 	public int statusPoint = 0;
@@ -137,7 +137,7 @@ public class Status : MonoBehaviour {
 		totalElemental[8] = elementalEffective.darkness - eqElemental.darkness;
 	}
 
-	public string OnDamage(int amount , int element , bool isMagic){	
+	public string OnDamage(float amount , int element , bool isMagic){	
 		if(!dead){
 			if(GlobalStatus.freezeAll){
 				return "";
@@ -148,15 +148,6 @@ public class Status : MonoBehaviour {
 			if(immortal){
 				return "Invulnerable";
 			}
-			if(block){
-				return "Guard";
-			}
-			if(hiddenStatus.autoGuard > 0){
-				int ran = Random.Range(0 , 100);
-				if(ran <= hiddenStatus.autoGuard){
-					return "Guard";
-				}
-			}
 			if(!isMagic){
 				amount -= totalStat.def;
 			}else{
@@ -166,8 +157,21 @@ public class Status : MonoBehaviour {
 			//Calculate Element Effective
 			amount *= totalElemental[element];
 			amount /= 100;
-			
-			if(amount < 1){
+
+            if (block)
+            {
+                amount /= 2;
+            }
+            if (hiddenStatus.autoGuard > 0)
+            {
+                int ran = Random.Range(0, 100);
+                if (ran <= hiddenStatus.autoGuard)
+                {
+                    amount /= 2;
+                }
+            }
+
+            if (amount < 1){
 				amount = 1;
 			}
 			health -= amount;
@@ -197,15 +201,15 @@ public class Status : MonoBehaviour {
 		exp = 0;
 		exp += remainingEXP;
 		level++;
-		statusPoint += 5;
+		statusPoint += 1;
 		skillPoint++;
 		//Extend the Max EXP, Max Health and Max Mana
 		maxExp = 125 * maxExp  / 100;
-		maxHealth += 20;
-		maxMana += 10;
+		maxHealth += 10;
+		maxMana += 5;
 		//Recover Health and Mana
 		CalculateStatus();
-		health = totalStat.health;
+		//health = totalStat.health;
 		mana = totalStat.mana;
 		GainEXP(0);
 		if(levelUpEffect){
@@ -268,7 +272,7 @@ public class Status : MonoBehaviour {
 
 	private GameObject poisonEff;
 	public IEnumerator OnPoison(int hurtTime){
-		int amount = 0;
+		float amount = 0;
 		if(poison){
 			yield break;
 		}
@@ -464,13 +468,15 @@ public class Status : MonoBehaviour {
 		}
 		block = true;
 		if(anim != ""){
+			
 			mainSprite.SetTrigger(anim);
 		}
 	}
 	
 	public void GuardBreak(string anim){
 		block = false;
-		if(anim != ""){
+       
+        if (anim != ""){
 			mainSprite.SetTrigger(anim);
 		}
 	}
@@ -478,7 +484,8 @@ public class Status : MonoBehaviour {
 	[HideInInspector]
 	public Vector3 knock = Vector3.zero;
 	[HideInInspector]
-	public float knockForce = 700;
+	public float knockForce = 300;
+	public float ShieldKnockForce = 150;
 	
 
 	public void Flinch(Vector3 dir){
@@ -496,9 +503,11 @@ public class Status : MonoBehaviour {
 	
 	IEnumerator KnockBack(){
 		flinch = true;
-		yield return new WaitForSeconds(0.2f);
+		yield return new WaitForSeconds(0.14f);
 		flinch = false;
 	}
+
+	
 }
 
 [System.Serializable]
@@ -561,6 +570,6 @@ public class MainStatus{
 	public int def = 0;
 	public int matk = 0;
 	public int mdef = 0;
-	public int health = 0;
+	public float health = 0;
 	public int mana = 0;
 }
