@@ -156,18 +156,18 @@ public class Status : MonoBehaviour {
 
 			//Calculate Element Effective
 			amount *= totalElemental[element];
-			amount /= 100;
+			amount /= 50;
 
             if (block)
             {
-                amount /= 2;
+                amount /= 4;
             }
             if (hiddenStatus.autoGuard > 0)
             {
                 int ran = Random.Range(0, 100);
                 if (ran <= hiddenStatus.autoGuard)
                 {
-                    amount /= 2;
+                    amount /= 4;
                 }
             }
 

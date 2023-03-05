@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof (Rigidbody2D))]
 [RequireComponent(typeof (AttackTrigger))]
@@ -24,6 +25,14 @@ public class TopdownInputController2D : MonoBehaviour {
 	private float moveHorizontal;
 	private float moveVertical;
 
+	public Slider dStaminaBar;
+
+	private int maxStamina = 100;
+	private int currentStamina;
+
+	private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+	
+
 	void Start(){
 		rb = GetComponent<Rigidbody2D>();
 		rb.gravityScale = 0;
@@ -36,7 +45,13 @@ public class TopdownInputController2D : MonoBehaviour {
 		if(!anim && GetComponent<Animator>()){
 			anim = GetComponent<Animator>();
 		}
-	}
+		currentStamina = maxStamina;
+		dStaminaBar.maxValue = maxStamina;
+		dStaminaBar.value = maxStamina;
+        lastRoutine = StartCoroutine(StaminaIncreaser());
+    }
+
+	
 
 	void Update(){
 		if(Time.timeScale == 0.0f || stat.freeze || GlobalStatus.freezeAll || GlobalStatus.freezePlayer || !stat.canControl && !atk.meleefwd){
@@ -52,8 +67,11 @@ public class TopdownInputController2D : MonoBehaviour {
 		if(onDashing){
 			return;
 		}
-		if(canDash && Input.GetKeyDown(KeyCode.Space)){
-			StartCoroutine("Dash");
+		if(canDash && Input.GetKeyDown(KeyCode.Space))
+		{
+            StartCoroutine("Dash");
+            
+			
 		}
 
 		if(joyStick){
@@ -82,7 +100,9 @@ public class TopdownInputController2D : MonoBehaviour {
 			rot.y = 180;
 			transform.eulerAngles = rot;
 		}
-	}
+
+       
+    }
 	
 	void FixedUpdate(){
 		if(Time.timeScale == 0.0f || stat.freeze || GlobalStatus.freezeAll || GlobalStatus.freezePlayer || stat.flinch || !stat.canControl /*|| stat.block*/){
@@ -122,45 +142,82 @@ public class TopdownInputController2D : MonoBehaviour {
 				anim.SetBool("run" , moving);
 			}
 		}
+
+		
 	}
 
 	public void DashButton(){
 		StartCoroutine("Dash");
 	}
 
-	public IEnumerator Dash(){
-		if(!onDashing){
-			if(stat.block){
-				stat.GuardBreak("cancelGuard");
-			}
-			if(atk.aimAtMouse){
-				atk.LookAtMouse();
-			}
-			onDashing = true;
-			anim.SetTrigger("dash");
-			anim.ResetTrigger("cancelDash");
-			canDash = false;
-			yield return new WaitForSeconds(dashDuration);
-			CancelDash();
-			
-		}
-	}
-	
-	public void CancelDash(){
-		StopCoroutine("Dash");
-		
-		anim.SetTrigger("cancelDash");
-		onDashing = false;
-		StartCoroutine(ResetDash());
-	}
-
-	IEnumerator ResetDash()
+	public IEnumerator Dash()
 	{
+        Debug.Log("DashStarted");
+        
+        if (currentStamina >= 50 && !onDashing)
+        {
+            StopCoroutine(lastRoutine);
+
+            currentStamina -= 50;
+            dStaminaBar.value = currentStamina;
+            
+            
+                if (stat.block)
+                {
+                    stat.GuardBreak("cancelGuard");
+                }
+                if (atk.aimAtMouse)
+                {
+                    atk.LookAtMouse();
+                }
+                onDashing = true;
+                anim.SetTrigger("dash");
+                anim.ResetTrigger("cancelDash");
+                canDash = false;
+                yield return new WaitForSeconds(dashDuration);
+                
+                Debug.Log("dashended");
+            
+            CancelDash();
+
+            
+        }
+        
+	}
+    Coroutine lastRoutine = null;
+    public void CancelDash(){
 		StopCoroutine("Dash");
-		yield return new WaitForSeconds(2f);
-		canDash = true;
+        StopCoroutine(lastRoutine);
+        anim.SetTrigger("cancelDash");
+		onDashing = false;
+        canDash = true;
+        lastRoutine = StartCoroutine(StaminaIncreaser());
+        
+        //StartCoroutine(ResetDash());
+    }
+
+	//IEnumerator ResetDash()
+	//{
+	//	StopCoroutine("Dash");
+	//	yield return new WaitForSeconds(2f);
+	//	canDash = true;
 		
-		StopCoroutine("ResetDash");
+	//	StopCoroutine("ResetDash");
+	//}
+
+	
+
+	IEnumerator StaminaIncreaser()
+	{
+		Debug.Log("SI Started");
+		yield return new WaitForSeconds(5);
+		while (currentStamina < maxStamina)
+		{
+			currentStamina += maxStamina / 60;
+			dStaminaBar.value = currentStamina;
+			yield return regenTick;
+        }
+		
 	}
 
 }
