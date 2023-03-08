@@ -10335,6 +10335,11 @@ MonoBehaviour:
   playerCharacter: {fileID: 1322012539695564}
   offsetDistance: 1
   sizeOfInteractableArea: 1.2
+  markerManager: {fileID: 0}
+  tileMapReadController: {fileID: 0}
+  maxDistance: 1.5
+  cropsManager: {fileID: 0}
+  plowableTiles: {fileID: 11400000, guid: 1074c27967d806e4599fb5a7570d6ff8, type: 2}
 --- !u!114 &3219050427480450169
 MonoBehaviour:
   m_ObjectHideFlags: 0

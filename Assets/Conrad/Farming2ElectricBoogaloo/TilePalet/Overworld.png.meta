@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Overworld_0
+      name: Grass
       rect:
         serializedVersion: 2
         x: 0
@@ -4250,7 +4250,7 @@ TextureImporter:
         width: 46
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -20433,7 +20433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_970
+      name: Plowable Dirt
       rect:
         serializedVersion: 2
         x: 16
@@ -22660,7 +22660,6 @@ TextureImporter:
       Overworld_668: -784838901
       Overworld_556: -859240777
       Overworld_1043: -947903143
-      Overworld_0: -1125276710
       Overworld_755: 1785401725
       Overworld_1066: -444299143
       Overworld_495: -486327872
@@ -22678,9 +22677,9 @@ TextureImporter:
       Overworld_1049: 1235442670
       Overworld_896: -890373793
       Overworld_506: 288075283
-      Overworld_900: 1805500880
-      Overworld_51: -36222257
       Overworld_653: 2054708912
+      Overworld_939: -141957440
+      Overworld_900: 1805500880
       Overworld_473: -1943768870
       Overworld_779: 1132425592
       Overworld_375: -1001506515
@@ -22690,7 +22689,7 @@ TextureImporter:
       Overworld_79: -296000145
       Overworld_1034: 1286807605
       Overworld_359: -2098383218
-      Overworld_939: -141957440
+      Overworld_51: -36222257
       Overworld_142: -1734181998
       Overworld_657: -474903133
       Overworld_852: 48549014
@@ -22885,14 +22884,14 @@ TextureImporter:
       Overworld_94: -1074683908
       Overworld_285: -131513174
       Overworld_1008: 2097405680
-      Overworld_873: 567902601
       Overworld_160: 812080818
-      Overworld_424: 1579666649
+      Overworld_873: 567902601
+      Overworld_472: -511387517
       Overworld_57: 24603963
       Overworld_787: 2021574304
       Overworld_47: 58294441
       Overworld_185: 724110994
-      Overworld_472: -511387517
+      Overworld_424: 1579666649
       Overworld_410: -45237663
       Overworld_233: -234618807
       Overworld_260: 584850754
@@ -23150,6 +23149,7 @@ TextureImporter:
       Overworld_393: -853249548
       Overworld_808: 443177819
       Overworld_243: -771432995
+      Grass: -1125276710
       Overworld_811: -487472890
       Overworld_625: -1483234989
       Overworld_445: -963215376
@@ -23163,13 +23163,13 @@ TextureImporter:
       Overworld_817: 1374094434
       Overworld_1036: -30934917
       Overworld_502: -99449636
-      Overworld_446: -438515803
       Overworld_866: -1143150174
+      Overworld_1052: -669086598
       Overworld_452: -387304948
       Overworld_303: -1078907762
       Overworld_317: -644826590
       Overworld_396: -578725981
-      Overworld_1052: -669086598
+      Overworld_446: -438515803
       Overworld_569: -44844620
       Overworld_647: 2070250826
       Overworld_421: 1232762429
@@ -23271,11 +23271,10 @@ TextureImporter:
       Overworld_101: 591471771
       Overworld_884: -561514432
       Overworld_367: 734439933
-      Overworld_408: -1743100765
       Overworld_60: 998430179
+      Overworld_408: -1743100765
       Overworld_1056: -1326736095
       Overworld_294: -1569781902
-      Overworld_970: -1764201318
       Overworld_542: 1812283440
       Overworld_1027: -1440676892
       Overworld_728: -157157021
@@ -23287,6 +23286,7 @@ TextureImporter:
       Overworld_551: -1525190631
       Overworld_624: -1833010745
       Overworld_379: -396582403
+      Plowable Dirt: -1764201318
       Overworld_155: -179177767
       Overworld_1041: 415377202
       Overworld_665: -1987725141

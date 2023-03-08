@@ -6,10 +6,17 @@ public class ItemToolBarPanel : FarmingItemPanel
 {
     [SerializeField] FarmingToolBarController toolbarController;
 
-    private void Awake()
+    private void Start()
     {
         Init();
         toolbarController.onChange += Highlight;
+        Highlight(0);
+    }
+
+    private void Awake()
+    {
+        Init();
+        
         Highlight(0);
     }
     public override void OnClick(int id)

@@ -13,30 +13,15 @@ public class ToolBarSwitcher : MonoBehaviour
     private void Awake()
     {
         num = 0;
+        FightingUI.SetActive(true);
+        FarmingUI.SetActive(false);
     }
 
     private void Update()
     {
         UICycle();
 
-        if (num == 0)
-        {
-            PlayerUI.SetActive(true);
-            FightingUI.SetActive(true);
-            FarmingUI.SetActive(false);
-            
-        }
-        else if (num == 1)
-        {
-            PlayerUI.SetActive(true);
-            FightingUI.SetActive(false);
-            FarmingUI.SetActive(true);
-            
-        }
-        else if (num == 2)
-        {
-            PlayerUI.SetActive(false);
-        }
+        
     }
 
     private void UICycle()
@@ -48,6 +33,25 @@ public class ToolBarSwitcher : MonoBehaviour
             if (num > 2)
             {
                 num = 0;
+            }
+
+            if (num == 0)
+            {
+                PlayerUI.SetActive(true);
+                FightingUI.SetActive(true);
+                FarmingUI.SetActive(false);
+
+            }
+            else if (num == 1)
+            {
+                PlayerUI.SetActive(true);
+                FightingUI.SetActive(false);
+                FarmingUI.SetActive(true);
+
+            }
+            else if (num == 2)
+            {
+                PlayerUI.SetActive(false);
             }
         }
     }

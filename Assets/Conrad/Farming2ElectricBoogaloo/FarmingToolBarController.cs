@@ -15,24 +15,27 @@ public class FarmingToolBarController : MonoBehaviour
         float delta = Input.mouseScrollDelta.y;
         if (delta != 0)
         {
+            
+            
             if (delta > 0)
             {
                 selectedTool += 1;
-                selectedTool = selectedTool >= toolbarSize ? 0 : selectedTool;
+                if (selectedTool == 10)
+                {
+                    selectedTool = 9;
+                }
+                selectedTool = (selectedTool >= toolbarSize ? 0 : selectedTool);
             }
             else
             {
                 selectedTool -= 1;
-                selectedTool = selectedTool < 0 ? toolbarSize - 1 : selectedTool;
+                if (selectedTool == -1)
+                {
+                    selectedTool = 0;
+                }
+                selectedTool = (selectedTool < 0 ? toolbarSize - 1 : selectedTool);
             }
-            //if (selectedTool > 10)
-            //{
-            //    selectedTool -= 10;
-            //}
-            //if (selectedTool < 0)
-            //{
-            //    selectedTool += 10;
-            //}
+            
             onChange?.Invoke(selectedTool);
             Debug.Log(selectedTool);
         }
