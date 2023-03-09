@@ -5203,7 +5203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6303343024751157803}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2469294, y: 0.19111964, z: -1.1163683}
+  m_LocalPosition: {x: 0.03, y: -0.01, z: -1.1163683}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5223,7 +5223,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -5235,13 +5235,13 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 135.1
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 192
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 635df6d0769e85845815b3549c551e87, type: 2}
   m_TargetDisplay: 0
@@ -32729,6 +32729,11 @@ MonoBehaviour:
   playerCharacter: {fileID: 7970106847860843131}
   offsetDistance: 1
   sizeOfInteractableArea: 1.2
+  markerManager: {fileID: 0}
+  tileMapReadController: {fileID: 0}
+  maxDistance: 1.5
+  cropsManager: {fileID: 0}
+  plowableTiles: {fileID: 0}
 --- !u!114 &4770278341275875278
 MonoBehaviour:
   m_ObjectHideFlags: 0
