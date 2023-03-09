@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/2D-ARPG/ExampleScenes/Field2.unity
     guid: ff54b861feca1a243834ff56d463bc55
-  - enabled: 0
+  - enabled: 1
     path: Assets/Conrad/HomeBase2.unity
     guid: 7a34afbe0ce94cc4dacab7cf652dc338
   m_configObjects: {}

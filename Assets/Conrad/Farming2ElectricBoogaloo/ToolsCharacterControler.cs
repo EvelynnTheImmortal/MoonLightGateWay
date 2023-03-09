@@ -36,8 +36,8 @@ public class ToolsCharacterControler : MonoBehaviour
 
         aT = GetComponent<AttackTrigger>();
 
-        markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
-        tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
+        //markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
+        //tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
         
         toolBarController = GetComponent<FarmingToolBarController>();
         //animator = GameObject.Find("Knight-Player").GetComponentInChildren<Animator>();
@@ -47,6 +47,15 @@ public class ToolsCharacterControler : MonoBehaviour
 
     private void Update()
     {
+        if (markerManager == null)
+        {
+            markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
+        }
+        if (tileMapReadController == null)
+        {
+            tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
+        }
+
         SelectTile();
         CanSelectCheck();
         Marker();
