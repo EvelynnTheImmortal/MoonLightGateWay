@@ -9461,10 +9461,10 @@ GameObject:
   - component: {fileID: 7870805704084741567}
   - component: {fileID: 5396007426780750665}
   - component: {fileID: 3219050427480450169}
-  - component: {fileID: 1958671297458794098}
   - component: {fileID: 8565870931320641926}
   - component: {fileID: 5786775136826141439}
   - component: {fileID: 8663955472014316804}
+  - component: {fileID: 6001460877674038144}
   m_Layer: 0
   m_Name: Knight-Player
   m_TagString: Untagged
@@ -10332,6 +10332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4153674cd7532ea4e84d6b6c9a765b58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 95694210371499806}
   playerCharacter: {fileID: 1322012539695564}
   offsetDistance: 1
   sizeOfInteractableArea: 1.2
@@ -10352,22 +10353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2177c07591461ef44a3a0b87d00a0a20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1958671297458794098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1322012539695564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bd9081d91778294cb25a1c0607a7f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCharacter: {fileID: 1322012539695564}
-  highlightController: {fileID: 4136189509245113017}
-  offsetDistance: 1
-  sizeOfInteractableArea: 1.2
 --- !u!114 &8565870931320641926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10410,6 +10395,22 @@ MonoBehaviour:
   FightingUI: {fileID: 1678853022716404}
   FarmingUI: {fileID: 7224593651158302923}
   PlayerUI: {fileID: 1642007738026322}
+--- !u!114 &6001460877674038144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322012539695564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bd9081d91778294cb25a1c0607a7f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCharacter: {fileID: 1322012539695564}
+  highlightController: {fileID: 4136189509245113017}
+  offsetDistance: 1
+  sizeOfInteractableArea: 1.2
 --- !u!1 &1323446244242344
 GameObject:
   m_ObjectHideFlags: 0

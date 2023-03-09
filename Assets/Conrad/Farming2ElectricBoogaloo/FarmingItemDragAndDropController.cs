@@ -32,14 +32,14 @@ public class FarmingItemDragAndDropController : MonoBehaviour
                 
                 if (EventSystem.current.IsPointerOverGameObject() == false)
                 {
-                    Debug.Log("task started");
+                    //Debug.Log("task started");
                     Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     worldPosition.z = 0;
                     ItemSpawnManager.instance.SpawnItem(worldPosition, itemSlot.item, itemSlot.count);
-                    Debug.Log("task half way");
+                   //Debug.Log("task half way");
                     itemSlot.Clear();
                     itemIcon.SetActive(false);
-                    Debug.Log("task comp");
+                    //Debug.Log("task comp");
                     DiscardArea.SetActive(true);
                 }
             }

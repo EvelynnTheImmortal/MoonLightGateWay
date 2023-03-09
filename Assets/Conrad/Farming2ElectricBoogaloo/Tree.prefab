@@ -120,3 +120,4 @@ MonoBehaviour:
   spread: 0.7
   itemCountInOneDrop: 0
   item: {fileID: 11400000, guid: 052575874f542d343a1c427a1bf20096, type: 2}
+  nodeType: 1

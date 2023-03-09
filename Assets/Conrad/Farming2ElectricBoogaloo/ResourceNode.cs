@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeCutAble : ToolHit
+[RequireComponent(typeof(CircleCollider2D))]
+public class ResourceNode : ToolHit
 {
     [SerializeField] GameObject pickUpDrop;
     [SerializeField] int dropCount = 5;
     [SerializeField] float spread = 0.7f;
     [SerializeField] int itemCountInOneDrop = 1;
     [SerializeField] Item item;
+    [SerializeField] ResourceNodeType nodeType;
 
     public override void Hit()
     {
@@ -25,5 +27,10 @@ public class TreeCutAble : ToolHit
         }
 
         Destroy(gameObject);
+    }
+
+    public override bool CanBeHit(List<ResourceNodeType> canBeHit)
+    {
+        return canBeHit.Contains(nodeType);
     }
 }
