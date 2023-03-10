@@ -15,8 +15,8 @@ public class Status : MonoBehaviour {
 	public int mdef = 0;
 	public int exp = 0;
 	public int maxExp = 100;
-	public float maxHealth = 100;
-	public float health = 100;
+	public int maxHealth = 100;
+	public int health = 100;
 	public int maxMana = 100;
 	public int mana = 100;
 	public int statusPoint = 0;
@@ -137,7 +137,7 @@ public class Status : MonoBehaviour {
 		totalElemental[8] = elementalEffective.darkness - eqElemental.darkness;
 	}
 
-	public string OnDamage(float amount , int element , bool isMagic){	
+	public string OnDamage(int amount , int element , bool isMagic){	
 		if(!dead){
 			if(GlobalStatus.freezeAll){
 				return "";
@@ -272,7 +272,7 @@ public class Status : MonoBehaviour {
 
 	private GameObject poisonEff;
 	public IEnumerator OnPoison(int hurtTime){
-		float amount = 0;
+        int amount = 0;
 		if(poison){
 			yield break;
 		}
@@ -570,6 +570,6 @@ public class MainStatus{
 	public int def = 0;
 	public int matk = 0;
 	public int mdef = 0;
-	public float health = 0;
+	public int health = 0;
 	public int mana = 0;
 }

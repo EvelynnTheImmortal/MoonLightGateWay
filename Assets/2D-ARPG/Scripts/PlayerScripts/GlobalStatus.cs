@@ -22,12 +22,12 @@ public class GlobalStatus : MonoBehaviour {
 	public static int mdef = 0;
 	public static int exp = 0;
 	public static int maxExp = 100;
-	public static float maxHealth = 100;
+	public static int maxHealth = 100;
 	public static int maxMana = 100;
 	public static int statusPoint = 0;
 	public static int skillPoint = 0;
 
-	public static float health = 100;
+	public static int health = 100;
 	public static int mana = 100;
 	
 	public static int cash = 0;
@@ -42,8 +42,8 @@ public class GlobalStatus : MonoBehaviour {
 	public static int bootsEquip = 0;
 	public static int accessoryEquip = 0;
 	
-	public static int[] shottcutId = new int[8];
-	public static int[] shottcutType = new int[8];
+	public static int[] shottcutId = new int[12];
+	public static int[] shottcutType = new int[12];
 
 	public static int[] skillListSlot = new int[30];
 	

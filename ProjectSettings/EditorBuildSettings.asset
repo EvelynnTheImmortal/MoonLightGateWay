@@ -12,11 +12,14 @@ EditorBuildSettings:
     path: Assets/2D-ARPG/ExampleScenes/Camp.unity
     guid: 4ac9d29b64f618d4a831cd86760f77cf
   - enabled: 1
-    path: Assets/Brendon/Brendon Test field.unity
-    guid: dfd911739024929418d7acff75a82e5b
+    path: Assets/2D-ARPG/ExampleScenes/Field1.unity
+    guid: b426e0525e0223e428a9bae2e91e0b90
   - enabled: 1
     path: Assets/2D-ARPG/ExampleScenes/Field2.unity
     guid: ff54b861feca1a243834ff56d463bc55
+  - enabled: 0
+    path: Assets/Brendon/Brendon Test field.unity
+    guid: dfd911739024929418d7acff75a82e5b
   - enabled: 1
     path: Assets/Conrad/HomeBase2.unity
     guid: 7a34afbe0ce94cc4dacab7cf652dc338

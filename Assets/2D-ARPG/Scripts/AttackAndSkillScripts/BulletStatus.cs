@@ -8,7 +8,7 @@ public class BulletStatus : MonoBehaviour {
 	
 	[HideInInspector]
 	public int playerAttack = 5;
-	public float totalDamage = 0;
+	public int totalDamage = 0;
 	public int variance = 15;
 	[Range(0, 100)]
 	public int criticalChance = 0;
@@ -128,7 +128,7 @@ public class BulletStatus : MonoBehaviour {
 				int per = Random.Range(0, 100);
 				if(per <= criticalChance){
 					dmgPop.GetComponent<DamagePopup>().critical = true;
-					totalDamage *= 1.2f;
+					totalDamage *= 1;
 				}
 			}
 			
