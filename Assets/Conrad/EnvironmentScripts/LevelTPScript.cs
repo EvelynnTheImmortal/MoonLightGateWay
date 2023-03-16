@@ -41,7 +41,7 @@ public class LevelTPScript : MonoBehaviour
         }
         else if (editorInt == 2)
         {
-
+            SceneManager.LoadScene("CNEnvironment2");
         }
     }
 }
