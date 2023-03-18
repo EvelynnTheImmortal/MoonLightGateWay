@@ -19,7 +19,7 @@ public class TopdownInputController2D : MonoBehaviour {
 
 	public bool canDash = false;
 	public float dashSpeed = 15;
-	public float dashDuration = 0.5f;
+	public float dashDuration = 0.35f;
 	private bool onDashing = false;
 	public JoystickCanvas joyStick;// For Mobile
 	private float moveHorizontal;
@@ -108,7 +108,7 @@ public class TopdownInputController2D : MonoBehaviour {
 		if(Time.timeScale == 0.0f || stat.freeze || GlobalStatus.freezeAll || GlobalStatus.freezePlayer || stat.flinch || !stat.canControl /*|| stat.block*/){
 			moveHorizontal = 0;
 			moveVertical = 0;
-			//rb.velocity = Vector2.zero;
+			rb.velocity = Vector2.zero;
 			return;
 		}
 		if(onDashing){
@@ -117,9 +117,15 @@ public class TopdownInputController2D : MonoBehaviour {
 			}
 
 			if(atk.aimAtMouse){
-				atk.LookAtMouse();
-				Vector3 dir = atk.attackPoint.TransformDirection(Vector3.right);
-				GetComponent<Rigidbody2D>().velocity = dir * dashSpeed;
+                //atk.LookAtMouse();
+                //Vector3 dir = atk.attackPoint.TransformDirection(Vector3.right);
+                Vector3 moveVector = Vector3.zero;
+                moveVector.x = Input.GetAxis("Horizontal");
+                moveVector.y = Input.GetAxis("Vertical");
+           
+                //float angle = Vector3.Angle(moveVector, Vector3.right);
+                //Vector3 moveVector =  vecticalInput + horizontalInput;
+                GetComponent<Rigidbody2D>().velocity = moveVector * dashSpeed;
 			}else{
 				Vector3 dir = transform.TransformDirection(Vector3.right);
 				GetComponent<Rigidbody2D>().velocity = dir * dashSpeed;
@@ -154,11 +160,11 @@ public class TopdownInputController2D : MonoBehaviour {
 	{
         Debug.Log("DashStarted");
         
-        if (currentStamina >= 50 && !onDashing)
+        if (currentStamina >= 33 && !onDashing)
         {
             StopCoroutine(lastRoutine);
 
-            currentStamina -= 50;
+            currentStamina -= 33;
             dStaminaBar.value = currentStamina;
             
             
@@ -213,7 +219,7 @@ public class TopdownInputController2D : MonoBehaviour {
 		yield return new WaitForSeconds(5);
 		while (currentStamina < maxStamina)
 		{
-			currentStamina += maxStamina / 60;
+			currentStamina += maxStamina / 30;
 			dStaminaBar.value = currentStamina;
 			yield return regenTick;
         }
