@@ -6,9 +6,19 @@ public class AwakeEvent : MonoBehaviour
 {
     public GameObject Player;
     public GameObject thisObject;
-    private void Awake()
+
+    //private void Awake()
+    //{
+    //    Player = GameObject.FindGameObjectWithTag("Player");
+    //    Player.transform.position = thisObject.transform.position;
+    //}
+
+    private void Update()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        Player.transform.position = thisObject.transform.position;
+        if (Player == null)
+        {
+            Player = GameObject.FindGameObjectWithTag("Player");
+            Player.transform.position = thisObject.transform.position;
+        }
     }
 }
