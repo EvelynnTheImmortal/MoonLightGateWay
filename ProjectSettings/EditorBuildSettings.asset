@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/KerimCicak/KCLevel2.unity
     guid: 28b88f695cc111b419a635af17abb329
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel3.unity
+    guid: ee426cd72a464d54aa8d3dad501ba67c
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel4.unity
+    guid: 95f3d43826fcfad4a90f7359c8df3853
   m_configObjects: {}
