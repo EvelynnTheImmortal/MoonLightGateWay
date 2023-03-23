@@ -215,11 +215,11 @@ public class TopdownInputController2D : MonoBehaviour {
 
 	IEnumerator StaminaIncreaser()
 	{
-		Debug.Log("SI Started");
-		yield return new WaitForSeconds(5);
+		
+		yield return new WaitForSeconds(3);
 		while (currentStamina < maxStamina)
 		{
-			currentStamina += maxStamina / 30;
+			currentStamina += maxStamina / 40;
 			dStaminaBar.value = currentStamina;
 			yield return regenTick;
         }

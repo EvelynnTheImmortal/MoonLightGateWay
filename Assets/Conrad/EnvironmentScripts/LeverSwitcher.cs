@@ -6,8 +6,8 @@ using TMPro;
 
 public class LeverSwitcher : MonoBehaviour
 {
-    public TMP_Text Mstext;
-    public GameObject globalCanvas;
+    //public TMP_Text Mstext;
+    //public GameObject globalCanvas;
     public GameObject lever;
     private LeverSwitcher ls; 
     public GameObject secretDoor;
@@ -25,7 +25,7 @@ public class LeverSwitcher : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (lever != null && istriggered == false)
+        if (lever != null)
         {
             switchCavas.SetActive(true);
             isInSquare = true;
@@ -34,7 +34,7 @@ public class LeverSwitcher : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (lever != null && istriggered == false)
+        if (lever != null)
         {
             switchCavas.SetActive(false);
             isInSquare = false;
@@ -44,7 +44,7 @@ public class LeverSwitcher : MonoBehaviour
 
     private void Update()
     {
-        if (isInSquare == true && Input.GetKeyDown(KeyCode.E) && istriggered == false)
+        if (isInSquare == true && Input.GetKeyDown(KeyCode.E))
         {
             TriggerSecretDoor();
             istriggered = true;
@@ -53,10 +53,10 @@ public class LeverSwitcher : MonoBehaviour
 
     private void TriggerSecretDoor()
     {
-        secretDoor.SetActive(true);
+        secretDoor.SetActive(false);
         lever = null;
         StartCoroutine(SwitchAnim());
-        StartCoroutine(CanvasActivation());
+        //StartCoroutine(CanvasActivation());
     }
     IEnumerator SwitchAnim()
     {
@@ -66,13 +66,13 @@ public class LeverSwitcher : MonoBehaviour
         StopCoroutine(SwitchAnim());
     }
 
-    IEnumerator CanvasActivation()
-    {
-        globalCanvas.SetActive(true);
-        Mstext.text = "The sound of metal shifting is heard...";
-        yield return new WaitForSeconds(2f);
-        Mstext.text = "";
-        globalCanvas.SetActive(false);
-        StopCoroutine(CanvasActivation());
-    }
+   // IEnumerator CanvasActivation()
+   // {
+        //globalCanvas.SetActive(true);
+        //Mstext.text = "The sound of metal shifting is heard...";
+        //yield return new WaitForSeconds(2f);
+        //Mstext.text = "";
+        //globalCanvas.SetActive(false);
+        //StopCoroutine(CanvasActivation());
+   // }
 }
