@@ -444,9 +444,9 @@ MonoBehaviour:
     dropPrefab: {fileID: 114256888414227794, guid: 1e1f13056c3a69e45a568256daf15968,
       type: 3}
     canBlock: 1
-    description: Attack +5
+    description: Attack +1
     price: 500
-    attack: 5
+    attack: 1
     defense: 0
     magicAttack: 0
     magicDefense: 0
