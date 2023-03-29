@@ -1086,11 +1086,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046f059975ff2f94ca9532918b7cedb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 24
-  damageMax: 35
+  damage: 0
+  damageMax: 0
   playerAttack: 5
   totalDamage: 0
-  variance: 15
+  variance: 20
   criticalChance: 0
   inflictStatus: []
   shooterTag: Player
@@ -1098,10 +1098,10 @@ MonoBehaviour:
   Popup: {fileID: 4039106846122228, guid: 11e556cf827bc7d4bbdc76f0e2ba1752, type: 3}
   hitEffect: {fileID: 1138846526227314, guid: bf711e87b53fb5f43bd80127ce17b9d3, type: 3}
   effectAtTarget: 0
-  flinch: 1
-  knockBackForces: 4
+  flinch: 0
+  knockBackForces: 3
   penetrate: 0
-  oneHitPerEnemy: 0
+  oneHitPerEnemy: 1
   AttackType: 0
   element: 0
   drainHp: 0

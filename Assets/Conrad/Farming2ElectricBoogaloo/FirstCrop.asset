@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cb0796beae7bee4a8895d88d09a1ff6, type: 3}
+  m_Name: FirstCrop
+  m_EditorClassIdentifier: 
+  timeToGrow: 20
+  yeild: {fileID: 11400000, guid: dc6077887de7ffc4a9b5354eb4d603b7, type: 2}
+  count: 1
+  sprites:
+  - {fileID: 40270299, guid: a38627535056a744f84042168500f692, type: 3}
+  - {fileID: 2022195365, guid: a38627535056a744f84042168500f692, type: 3}
+  - {fileID: -116334312, guid: a38627535056a744f84042168500f692, type: 3}
+  - {fileID: 858029825, guid: a38627535056a744f84042168500f692, type: 3}
+  growthStageTime: 04000000070000000d00000014000000

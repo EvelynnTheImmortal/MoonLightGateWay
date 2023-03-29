@@ -4783,8 +4783,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046f059975ff2f94ca9532918b7cedb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
-  damageMax: 25
+  damage: 5
+  damageMax: 5
   playerAttack: 5
   totalDamage: 0
   variance: 15
@@ -4795,7 +4795,7 @@ MonoBehaviour:
   Popup: {fileID: 4039106846122228, guid: 11e556cf827bc7d4bbdc76f0e2ba1752, type: 3}
   hitEffect: {fileID: 1312867150607948, guid: 4c6a26d78f9fa434ea8a130aa8fd7729, type: 3}
   effectAtTarget: 0
-  flinch: 1
+  flinch: 0
   knockBackForces: 4
   penetrate: 0
   oneHitPerEnemy: 0

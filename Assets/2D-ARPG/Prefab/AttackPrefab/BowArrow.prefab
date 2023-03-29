@@ -100,11 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046f059975ff2f94ca9532918b7cedb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 8
-  damageMax: 13
+  damage: 5
+  damageMax: 6
   playerAttack: 5
   totalDamage: 0
-  variance: 15
+  variance: 0
   criticalChance: 3
   inflictStatus: []
   shooterTag: Player
@@ -115,7 +115,7 @@ MonoBehaviour:
   flinch: 1
   knockBackForces: 3
   penetrate: 0
-  oneHitPerEnemy: 0
+  oneHitPerEnemy: 1
   AttackType: 0
   element: 0
   drainHp: 0

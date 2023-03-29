@@ -201,7 +201,7 @@ public class Status : MonoBehaviour {
 		exp = 0;
 		exp += remainingEXP;
 		level++;
-		statusPoint += 1;
+		statusPoint += 2;
 		skillPoint++;
 		//Extend the Max EXP, Max Health and Max Mana
 		maxExp = 125 * maxExp  / 100;

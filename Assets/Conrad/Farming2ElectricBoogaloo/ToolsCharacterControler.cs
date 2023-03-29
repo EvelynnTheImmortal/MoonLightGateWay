@@ -135,7 +135,7 @@ public class ToolsCharacterControler : MonoBehaviour
                 return;
             }
             animator.SetTrigger("Act");
-            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController);
+            bool complete = item.onTileMapAction.OnApplyToTileMap(selectedTilePosition, tileMapReadController, item);
             //Debug.Log("THY");
             if (complete == true)
             {

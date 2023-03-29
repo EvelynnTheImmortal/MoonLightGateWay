@@ -188,11 +188,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046f059975ff2f94ca9532918b7cedb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 12
-  damageMax: 16
+  damage: 2
+  damageMax: 3
   playerAttack: 5
   totalDamage: 0
-  variance: 15
+  variance: 0
   criticalChance: 5
   inflictStatus: []
   shooterTag: Player

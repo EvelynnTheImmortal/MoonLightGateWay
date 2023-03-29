@@ -3307,6 +3307,8 @@ MonoBehaviour:
   plowed: {fileID: 11400000, guid: a2f7c40a5c0de634e8aba4e08511a324, type: 2}
   seeded: {fileID: 11400000, guid: 2cfd4c0481c7d174697576bb57396a51, type: 2}
   targetTilemap: {fileID: 891333247}
+  cropsSpritePrefab: {fileID: 5788360739168791985, guid: bbcc0ea27b34ca24fae18e94a61a680c,
+    type: 3}
 --- !u!1001 &1895033734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3540,7 +3542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2028064813}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0162355, y: -0.6662169, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

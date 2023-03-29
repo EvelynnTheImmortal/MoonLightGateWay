@@ -102,7 +102,7 @@ public class BulletStatus : MonoBehaviour {
 		int varMin = 100 - variance;
 		int varMax = 100 + variance;
 		int randomDmg = Random.Range(damage, damageMax);
-		totalDamage = (randomDmg + playerAttack) * Random.Range(varMin ,varMax) / 100;
+		totalDamage = (randomDmg + playerAttack); /* * Random.Range(varMin ,varMax) / 100*/
 	}
 
 	void OnTriggerEnter2D(Collider2D other){  	
