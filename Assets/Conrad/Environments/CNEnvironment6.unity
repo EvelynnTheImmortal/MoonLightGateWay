@@ -46974,7 +46974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 7
   message: 
-  target: {fileID: 0}
+  target: {fileID: 1256907974}
   target2: {fileID: 0}
   targetIsPlayer: 0
   floatVar: 2
@@ -47035,7 +47035,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainModel: {fileID: 0}
+  mainModel: {fileID: 1256907974}
   runEvent: 0
   startCondition: 2
   lookNpc: 0
