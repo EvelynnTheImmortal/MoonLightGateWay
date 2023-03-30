@@ -188,8 +188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 046f059975ff2f94ca9532918b7cedb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 4
-  damageMax: 5
+  damage: 9
+  damageMax: 10
   playerAttack: 5
   totalDamage: 0
   variance: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   oneHitPerEnemy: 1
   AttackType: 0
   element: 0
-  drainHp: 30
+  drainHp: 80
   bombHitSetting:
     enable: 0
     bombEffect: {fileID: 0}
