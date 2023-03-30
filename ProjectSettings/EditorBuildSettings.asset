@@ -24,6 +24,12 @@ EditorBuildSettings:
     path: Assets/KerimCicak/KCLevel4.unity
     guid: 95f3d43826fcfad4a90f7359c8df3853
   - enabled: 1
+    path: Assets/KerimCicak/KCLevel5.unity
+    guid: 38ea49f3a935b5544a8fc139cf53c2b5
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel6.unity
+    guid: f297177ce74ae144f88a5df34db949ca
+  - enabled: 1
     path: Assets/Conrad/Environments/CastleBedroom.unity
     guid: 78296f42c1d7a7c4895b3f9b87de29c0
   - enabled: 1
