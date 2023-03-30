@@ -62660,7 +62660,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1616837487004242, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_Name
-      value: PS1
+      value: SP1
       objectReference: {fileID: 0}
     - target: {fileID: 4634409233231920, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_RootOrder
