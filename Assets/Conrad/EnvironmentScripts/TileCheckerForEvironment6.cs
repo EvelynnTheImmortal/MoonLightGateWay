@@ -12,6 +12,8 @@ public class TileCheckerForEvironment6 : MonoBehaviour
     public List<TileBase> requiredTiles;
     public List<TileBase> replacementTiles;
     public GameObject objectToTrigger;
+    public GameObject SecretDoor2;
+    public GameObject highlightTilemap;
 
     private bool allTilesChanged;
 
@@ -60,6 +62,9 @@ public class TileCheckerForEvironment6 : MonoBehaviour
                 Debug.Log("All required tiles have been changed.");
                 allTilesChanged = true;
                 objectToTrigger.SetActive(false);
+                SecretDoor2.SetActive(false);
+                Destroy(highlightTilemap);
+                
             }
         }
     }
