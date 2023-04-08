@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Rendering.Universal;
 using System;
+using UnityEngine.SceneManagement;
 
 public class DayTimeController : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class DayTimeController : MonoBehaviour
 
     [SerializeField] TMP_Text text;
     [SerializeField] Light2D globalLight;
+    public GameObject textObj;
 
     private int days;
 
@@ -30,6 +32,20 @@ public class DayTimeController : MonoBehaviour
     {
         //globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
         agents = new List<TimeAgent>();
+
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        switch (currentSceneName)
+        {
+            case "CNEnvironment8":
+                // Do something for Level1 scene
+                textObj.SetActive(true);
+                break;
+
+            default:
+                // Do something if the scene name doesn't match any of the above cases
+                textObj.SetActive(false);
+                break;
+        }
     }
 
     private void Start()

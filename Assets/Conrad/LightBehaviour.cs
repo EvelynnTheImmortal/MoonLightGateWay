@@ -73,7 +73,7 @@ public class LightBehaviour : MonoBehaviour
     IEnumerator infade()
     {
 
-        targetIntensity = 2f;
+        targetIntensity = 1f;
         initialIntensity = pL.intensity;
         duration = targetIntensity + initialIntensity * 60;
 

@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment7.unity
     guid: f8ae5351f74d44840812620d95d5889e
+  - enabled: 1
+    path: Assets/Conrad/Environments/CNEnvironment8.unity
+    guid: 8c60dff53c5d801498b1c393f7891a2d
   m_configObjects: {}
