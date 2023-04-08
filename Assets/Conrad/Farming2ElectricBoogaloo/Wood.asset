@@ -15,3 +15,7 @@ MonoBehaviour:
   Name: 
   stackable: 1
   icon: {fileID: 21300000, guid: 4e1a4bbeada31eb4786c7ca32ae00d7c, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}

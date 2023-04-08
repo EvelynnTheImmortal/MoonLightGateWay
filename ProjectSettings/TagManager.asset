@@ -8,6 +8,9 @@ TagManager:
   - SpawnPoint
   - Ally
   - Wall
+  - Plight
+  - TileMarker
+  - GMSR
   layers:
   - Default
   - TransparentFX

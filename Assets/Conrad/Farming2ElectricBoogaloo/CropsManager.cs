@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
@@ -11,6 +13,28 @@ public class CropTile
     public int growStage;
     public Crop crop;
     public SpriteRenderer renderer;
+    public float damage;
+    public Vector3Int position;
+    public bool Complete
+    { 
+        get
+        {
+            if (crop == null)
+            {
+                return false;
+            }
+            return growTimer >= crop.timeToGrow;
+        }
+    }
+
+    internal void Harvested()
+    {
+        growTimer = 0;
+        growStage = 0;
+        crop = null;
+        renderer.gameObject.SetActive(false);
+        damage = 0;
+    }
 }
 
 public class CropsManager : TimeAgent
@@ -37,6 +61,22 @@ public class CropsManager : TimeAgent
             {
                 continue;
             }
+
+            cropTile.damage += 0.02f;
+
+            if (cropTile.damage > 1f)
+            {
+                cropTile.Harvested();
+                targetTilemap.SetTile(cropTile.position, plowed);
+                continue;
+            }
+
+            if (cropTile.Complete)
+            {
+                //Debug.Log("I'm done growing");
+                continue;
+            }
+
             cropTile.growTimer += 1;
 
             if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growStage])
@@ -46,11 +86,7 @@ public class CropsManager : TimeAgent
 
                 cropTile.growStage += 1;
             }
-            if (cropTile.growTimer >= cropTile.crop.timeToGrow)
-            {
-                Debug.Log("I'm done growing");
-                cropTile.crop = null;
-            }
+            
         }
     }
 
@@ -89,7 +125,27 @@ public class CropsManager : TimeAgent
         go.SetActive(false);
         crop.renderer = go.GetComponent<SpriteRenderer>();
 
+        crop.position = position;
+
         targetTilemap.SetTile(position, plowed);
+    }
+
+    internal void PickUp(Vector3Int gridPosition)
+    {
+        Vector2Int position = (Vector2Int)gridPosition;
+        if (crops.ContainsKey(position) == false)
+        {
+            return;
+        }
+
+        CropTile cropTile = crops[position];
+
+        if (cropTile.Complete)
+        {
+            ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), cropTile.crop.yeild, cropTile.crop.count);
+            targetTilemap.SetTile(gridPosition, plowed);
+            cropTile.Harvested();
+        }
     }
 }
 

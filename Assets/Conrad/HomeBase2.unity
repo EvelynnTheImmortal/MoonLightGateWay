@@ -3231,7 +3231,7 @@ Transform:
   - {fileID: 2118114128}
   - {fileID: 891333245}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!156049354 &1502184846
 Grid:
@@ -3276,7 +3276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1402441952}
-  cropsManager: {fileID: 0}
+  cropsManager: {fileID: 1792088587}
 --- !u!4 &1792088586
 Transform:
   m_ObjectHideFlags: 0
@@ -3290,7 +3290,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1792088587
 MonoBehaviour:
