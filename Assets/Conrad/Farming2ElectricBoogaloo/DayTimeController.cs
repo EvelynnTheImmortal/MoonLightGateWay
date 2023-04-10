@@ -38,12 +38,22 @@ public class DayTimeController : MonoBehaviour
         {
             case "CNEnvironment8":
                 // Do something for Level1 scene
-                textObj.SetActive(true);
+                if (textObj != null)
+                {
+                    textObj.SetActive(true);
+                    globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
+                }
+
                 break;
 
             default:
                 // Do something if the scene name doesn't match any of the above cases
-                textObj.SetActive(false);
+                if (textObj != null)
+                {
+                    textObj.SetActive(false);
+                    globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
+                }
+
                 break;
         }
     }
