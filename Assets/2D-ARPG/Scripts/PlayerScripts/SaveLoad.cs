@@ -260,4 +260,8 @@ public class SaveLoad : MonoBehaviour {
 		}
 		transform.position = GlobalStatus.savePosition;
 	}
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }

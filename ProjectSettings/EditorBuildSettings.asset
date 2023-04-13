@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/2D-ARPG/ExampleScenes/Title.unity
     guid: 67e8fb70d1d7ab442b093891fbc07125
   - enabled: 1
-    path: Assets/2D-ARPG/ExampleScenes/Camp.unity
-    guid: 4ac9d29b64f618d4a831cd86760f77cf
-  - enabled: 1
     path: Assets/Conrad/Environments/CastleExt.unity
     guid: 62263309914aa7e4b94c66ae5dfa2957
+  - enabled: 1
+    path: Assets/Conrad/Environments/CNEnvironment3.unity
+    guid: 5fd00e7f9d016574cb9d7aff51e383f2
   - enabled: 1
     path: Assets/Conrad/Environments/CastleBedroom.unity
     guid: 78296f42c1d7a7c4895b3f9b87de29c0
@@ -21,26 +21,17 @@ EditorBuildSettings:
     path: Assets/Conrad/Environments/CastleInt.unity
     guid: b1a5b73c655d60641877e7b4f8c69fea
   - enabled: 1
-    path: Assets/Conrad/Environments/CNEnvironment1.unity
-    guid: 1f6ab2f61137d2d42986dc315a5121a6
-  - enabled: 1
-    path: Assets/Conrad/Environments/CNEnvironment2.unity
-    guid: b42a96ad794a2e1488f4d583c9de072b
-  - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment3.1.unity
     guid: 2b21067e20bf6724ebe0b43ca4ef3192
-  - enabled: 1
-    path: Assets/Conrad/Environments/CNEnvironment3.unity
-    guid: 5fd00e7f9d016574cb9d7aff51e383f2
   - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment4.unity
     guid: 3533e73cd0ace314b9322811b20c0398
   - enabled: 1
+    path: Assets/Conrad/Environments/CNEnvironment8.unity
+    guid: 8c60dff53c5d801498b1c393f7891a2d
+  - enabled: 1
     path: Assets/Brendon/BPMainCity2.unity
     guid: 8a9d46fb2ea81734798c00fa993b85bf
-  - enabled: 1
-    path: Assets/Brendon/Volcano level.unity
-    guid: e87cc5afafa3c224e95d33dd4f735498
   - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment5.unity
     guid: b91dce1c3c1848c4a90e589a3d53c969
@@ -51,24 +42,33 @@ EditorBuildSettings:
     path: Assets/Conrad/Environments/CNEnvironment7.unity
     guid: f8ae5351f74d44840812620d95d5889e
   - enabled: 1
-    path: Assets/Conrad/Environments/CNEnvironment8.unity
-    guid: 8c60dff53c5d801498b1c393f7891a2d
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel1.unity
-    guid: 835bd3497a9eb364cacfe0a753a6ef57
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel2.unity
-    guid: 28b88f695cc111b419a635af17abb329
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel3.unity
-    guid: ee426cd72a464d54aa8d3dad501ba67c
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel4.unity
-    guid: 95f3d43826fcfad4a90f7359c8df3853
-  - enabled: 1
     path: Assets/KerimCicak/KCLevel5.unity
     guid: 38ea49f3a935b5544a8fc139cf53c2b5
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Conrad/Environments/CNEnvironment1.unity
+    guid: 1f6ab2f61137d2d42986dc315a5121a6
+  - enabled: 0
+    path: Assets/Conrad/Environments/CNEnvironment2.unity
+    guid: b42a96ad794a2e1488f4d583c9de072b
+  - enabled: 0
+    path: Assets/Brendon/Volcano level.unity
+    guid: e87cc5afafa3c224e95d33dd4f735498
+  - enabled: 0
+    path: Assets/KerimCicak/KCLevel1.unity
+    guid: 835bd3497a9eb364cacfe0a753a6ef57
+  - enabled: 0
+    path: Assets/KerimCicak/KCLevel2.unity
+    guid: 28b88f695cc111b419a635af17abb329
+  - enabled: 0
+    path: Assets/KerimCicak/KCLevel3.unity
+    guid: ee426cd72a464d54aa8d3dad501ba67c
+  - enabled: 0
+    path: Assets/KerimCicak/KCLevel4.unity
+    guid: 95f3d43826fcfad4a90f7359c8df3853
+  - enabled: 0
     path: Assets/KerimCicak/KCLevel6.unity
     guid: f297177ce74ae144f88a5df34db949ca
+  - enabled: 0
+    path: Assets/2D-ARPG/ExampleScenes/Camp.unity
+    guid: 4ac9d29b64f618d4a831cd86760f77cf
   m_configObjects: {}
