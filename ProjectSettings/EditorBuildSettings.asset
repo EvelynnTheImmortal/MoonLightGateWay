@@ -12,29 +12,11 @@ EditorBuildSettings:
     path: Assets/2D-ARPG/ExampleScenes/Camp.unity
     guid: 4ac9d29b64f618d4a831cd86760f77cf
   - enabled: 1
-    path: Assets/KerimCicak/KCLevel1.unity
-    guid: 835bd3497a9eb364cacfe0a753a6ef57
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel2.unity
-    guid: 28b88f695cc111b419a635af17abb329
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel3.unity
-    guid: ee426cd72a464d54aa8d3dad501ba67c
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel4.unity
-    guid: 95f3d43826fcfad4a90f7359c8df3853
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel5.unity
-    guid: 38ea49f3a935b5544a8fc139cf53c2b5
-  - enabled: 1
-    path: Assets/KerimCicak/KCLevel6.unity
-    guid: f297177ce74ae144f88a5df34db949ca
+    path: Assets/Conrad/Environments/CastleExt.unity
+    guid: 62263309914aa7e4b94c66ae5dfa2957
   - enabled: 1
     path: Assets/Conrad/Environments/CastleBedroom.unity
     guid: 78296f42c1d7a7c4895b3f9b87de29c0
-  - enabled: 1
-    path: Assets/Conrad/Environments/CastleExt.unity
-    guid: 62263309914aa7e4b94c66ae5dfa2957
   - enabled: 1
     path: Assets/Conrad/Environments/CastleInt.unity
     guid: b1a5b73c655d60641877e7b4f8c69fea
@@ -54,8 +36,8 @@ EditorBuildSettings:
     path: Assets/Conrad/Environments/CNEnvironment4.unity
     guid: 3533e73cd0ace314b9322811b20c0398
   - enabled: 1
-    path: Assets/Brendon/BPMainCity.unity
-    guid: f35fa324463536b419462d2cc74fe6df
+    path: Assets/Brendon/BPMainCity2.unity
+    guid: 8a9d46fb2ea81734798c00fa993b85bf
   - enabled: 1
     path: Assets/Brendon/Volcano level.unity
     guid: e87cc5afafa3c224e95d33dd4f735498
@@ -71,4 +53,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment8.unity
     guid: 8c60dff53c5d801498b1c393f7891a2d
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel1.unity
+    guid: 835bd3497a9eb364cacfe0a753a6ef57
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel2.unity
+    guid: 28b88f695cc111b419a635af17abb329
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel3.unity
+    guid: ee426cd72a464d54aa8d3dad501ba67c
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel4.unity
+    guid: 95f3d43826fcfad4a90f7359c8df3853
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel5.unity
+    guid: 38ea49f3a935b5544a8fc139cf53c2b5
+  - enabled: 1
+    path: Assets/KerimCicak/KCLevel6.unity
+    guid: f297177ce74ae144f88a5df34db949ca
   m_configObjects: {}

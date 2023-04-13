@@ -2851,13 +2851,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      colony_118: 1921445183
+      colony_97: 1202648834
       colony_66: -1034887217
       colony_42: 1899367323
-      colony_101: -237822099
       colony_121: -1475606980
       colony_112: -1551540956
       colony_0: 188145393
+      colony_43: 1319749360
       colony_13: 1223975914
       colony_108: -222269877
       colony_114: 1537987061
@@ -2932,13 +2932,13 @@ TextureImporter:
       colony_81: 1402336419
       colony_74: -1186542559
       colony_23: -1927320974
-      colony_92: 1051595625
       colony_85: 372009687
-      colony_110: 730416886
+      colony_92: 1051595625
       colony_49: -732314191
+      colony_110: 730416886
       colony_21: -1159343265
-      colony_44: -1715484652
       colony_40: -1790008764
+      colony_44: -1715484652
       colony_91: -730333348
       colony_73: 56041625
       colony_119: 818617356
@@ -2974,10 +2974,10 @@ TextureImporter:
       colony_61: 1920059736
       colony_117: 222632997
       colony_96: 1001614742
-      colony_47: -364416028
-      colony_43: 1319749360
+      colony_101: -237822099
       colony_82: 1084679375
-      colony_97: 1202648834
+      colony_118: 1921445183
+      colony_47: -364416028
       colony_120: -815793319
   spritePackingTag: 
   pSDRemoveMatte: 0

@@ -57,6 +57,7 @@ public class FadeInEffect : MonoBehaviour
             Debug.Log("Transition2");
             canvas.SetActive(true);
             titleFadeCanvas.SetActive(false);
+            Destroy(this);
             StopCoroutine(newCoroutine);
         }
     }
