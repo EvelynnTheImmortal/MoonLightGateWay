@@ -68,7 +68,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/KerimCicak/KCLevel6.unity
     guid: f297177ce74ae144f88a5df34db949ca
-  - enabled: 0
+  - enabled: 1
     path: Assets/2D-ARPG/ExampleScenes/Camp.unity
     guid: 4ac9d29b64f618d4a831cd86760f77cf
   m_configObjects: {}
