@@ -33,29 +33,7 @@ public class DayTimeController : MonoBehaviour
         //globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
         agents = new List<TimeAgent>();
 
-        string currentSceneName = SceneManager.GetActiveScene().name;
-        switch (currentSceneName)
-        {
-            case "CNEnvironment8":
-                // Do something for Level1 scene
-                if (textObj != null)
-                {
-                    textObj.SetActive(true);
-                    globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
-                }
-
-                break;
-
-            default:
-                // Do something if the scene name doesn't match any of the above cases
-                if (textObj != null)
-                {
-                    textObj.SetActive(false);
-                    globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
-                }
-
-                break;
-        }
+       
     }
 
     private void Start()
@@ -85,10 +63,44 @@ public class DayTimeController : MonoBehaviour
 
     private void Update()
     {
-        if (globalLight == null)
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        switch (currentSceneName)
         {
-            globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
+            case "CNEnvironment8":
+                // Do something for Level1 scene
+                if (globalLight == null)
+                {
+                    textObj.SetActive(true);
+                    globalLight = GameObject.Find("Light 2D")?.GetComponent<Light2D>();
+                    if (globalLight == null)
+                    {
+                        Debug.LogError("Unable to find Light 2D object in scene!");
+                    }
+
+                }
+
+                break;
+
+            default:
+                // Do something if the scene name doesn't match any of the above cases
+                if (globalLight == null)
+                {
+                    textObj.SetActive(false);
+                    globalLight = GameObject.Find("Light 2D")?.GetComponent<Light2D>();
+                    if (globalLight == null)
+                    {
+                        Debug.LogError("Unable to find Light 2D object in scene!");
+                    }
+
+                }
+
+                break;
         }
+
+        //if (globalLight == null)
+        //{
+        //    globalLight = GameObject.Find("Light 2D").GetComponent<Light2D>();
+        //}
 
         time += Time.deltaTime * timescale;
         TimeValueCalculation();
