@@ -21,11 +21,11 @@ public class CharacterInteractController : MonoBehaviour
     private void Awake()
     {
         
-        playCharacter = GetComponent<CharacterController>();
+        //playCharacter = GetComponent<CharacterController>();
 
-        rgbd2d = GetComponent<Rigidbody2D>();
+        //rgbd2d = GetComponent<Rigidbody2D>();
 
-        aT = GetComponent<AttackTrigger>();
+        //aT = GetComponent<AttackTrigger>();
 
         character = GetComponent<Character>();
     }

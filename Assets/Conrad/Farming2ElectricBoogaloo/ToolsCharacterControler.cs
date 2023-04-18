@@ -32,11 +32,11 @@ public class ToolsCharacterControler : MonoBehaviour
 
     private void Awake()
     {
-        character = GetComponent<CharacterController>();
+        //character = GetComponent<CharacterController>();
 
-        rgbd2d = GetComponent<Rigidbody2D>();
+        //rgbd2d = GetComponent<Rigidbody2D>();
 
-        aT = GetComponent<AttackTrigger>();
+        //aT = GetComponent<AttackTrigger>();
 
         //markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
         //tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();

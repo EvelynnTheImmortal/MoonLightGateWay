@@ -10410,6 +10410,16 @@ MonoBehaviour:
   FightingUI: {fileID: 1678853022716404}
   FarmingUI: {fileID: 7224593651158302923}
   PlayerUI: {fileID: 1642007738026322}
+  PTCC: {fileID: 5396007426780750665}
+  PIC: {fileID: 8565870931320641926}
+  PFTBC: {fileID: 5786775136826141439}
+  PFCIC: {fileID: 6001460877674038144}
+  PFHC: {fileID: 0}
+  PCAT: {fileID: 114883541818687620}
+  farmingPoint: {fileID: 4049209505775688}
+  playerCharacter: {fileID: 1322012539695564}
+  offsetDistance: 1
+  sizeOfInteractableArea: 1.2
 --- !u!114 &6001460877674038144
 MonoBehaviour:
   m_ObjectHideFlags: 0
