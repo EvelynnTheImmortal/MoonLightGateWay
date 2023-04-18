@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollowPlayer2D : MonoBehaviour {
+public class CameraFollowPlayer2D : MonoBehaviour 
+{
 	public Transform player;
 	public Vector3 offset = new Vector3(0 , 0 , -10);
 
@@ -31,8 +32,9 @@ public class CameraFollowPlayer2D : MonoBehaviour {
 		if(Time.timeScale == 0.0f){
 			return;
 		}
-		transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, offset.z);
-		if(onShaking){
+        transform.position = new Vector3(player.position.x + offset.x, player.position.y + offset.y, offset.z);
+        if (onShaking){
+			
 			shakeValue = Random.Range(-shakingv , shakingv)* 0.2f;
 			transform.position += new Vector3(0 , shakeValue , 0);
 		}

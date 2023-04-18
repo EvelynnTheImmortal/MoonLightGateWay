@@ -498,6 +498,7 @@ MonoBehaviour:
   hurtVoice: {fileID: 0}
   knock: {x: 0, y: 0, z: 0}
   knockForce: 700
+  ShieldKnockForce: 150
 --- !u!50 &50959401728951176
 Rigidbody2D:
   serializedVersion: 4
@@ -545,7 +546,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1612788515720948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000001123784}
+  m_LocalPosition: {x: 0, y: 0, z: -2}
   m_LocalScale: {x: 0.016483983, y: 0.01648398, z: 0.016483981}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -708,7 +709,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920460434208036}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.4633217}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 0.06452133, y: 0.07248158, z: 0.6888443}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -765,7 +766,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &114588748539171148
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -11,6 +11,15 @@ TagManager:
   - Plight
   - TileMarker
   - GMSR
+  - TOP
+  - BOTTOM
+  - LEFT
+  - RIGHT
+  - TOP LEFT
+  - TOP RIGHT
+  - BOTTOM LEFT
+  - BOTTOM RIGHT
+  - PlayerPOS
   layers:
   - Default
   - TransparentFX
