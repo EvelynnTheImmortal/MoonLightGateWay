@@ -11,19 +11,19 @@ public class ArrowKnockBack : MonoBehaviour
         // Check if the arrow hits a player
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Hit registered");
-            // Get the player's transform and arrow's transform
-            Transform playerTransform = collision.gameObject.transform;
-            Transform arrowTransform = transform;
+            //Debug.Log("Hit registered");
+            //// Get the player's transform and arrow's transform
+            //Transform playerTransform = collision.gameObject.transform;
+            //Transform arrowTransform = transform;
 
-            // Calculate the direction from the arrow to the player
-            Vector2 direction = (Vector2)arrowTransform.right; // Arrow is moving parallel to hallway, so knockback direction is arrow's right
-            Debug.Log("Direction of arrow is noted");
+            //// Calculate the direction from the arrow to the player
+            //Vector2 direction = (Vector2)arrowTransform.right; // Arrow is moving parallel to hallway, so knockback direction is arrow's right
+            //Debug.Log("Direction of arrow is noted");
 
             // Apply knockback force to the player in the knockback direction
             Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
             playerRigidbody.velocity = Vector2.zero; // Reset player's velocity to avoid interference
-            playerRigidbody.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
+            playerRigidbody.AddForce(Vector3.forward * -5);
             Debug.Log("Player is knocked back");
         }
     }

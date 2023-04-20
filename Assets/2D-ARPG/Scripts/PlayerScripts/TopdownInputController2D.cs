@@ -28,7 +28,7 @@ public class TopdownInputController2D : MonoBehaviour {
 	public Slider dStaminaBar;
 
 	private int maxStamina = 100;
-	private int currentStamina;
+	public int currentStamina;
 
 	private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
 	

@@ -9513,6 +9513,7 @@ MonoBehaviour:
   dashDuration: 0.35
   joyStick: {fileID: 114614905868822234}
   dStaminaBar: {fileID: 7953851163097466290}
+  currentStamina: 0
 --- !u!114 &114841167654639894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26863,7 +26864,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &224947963351372906
 RectTransform:
   m_ObjectHideFlags: 0
