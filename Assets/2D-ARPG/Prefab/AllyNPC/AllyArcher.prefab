@@ -616,7 +616,7 @@ MonoBehaviour:
   approachDistance: 4.7
   detectRange: 4.8
   lostSight: 20
-  speed: 35
+  speed: 30
   gravity: 0
   attackAnimationTrigger:
   - bow
