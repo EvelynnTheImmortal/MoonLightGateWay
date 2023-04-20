@@ -20,6 +20,7 @@ TagManager:
   - BOTTOM LEFT
   - BOTTOM RIGHT
   - PlayerPOS
+  - ChargedAttack
   layers:
   - Default
   - TransparentFX
