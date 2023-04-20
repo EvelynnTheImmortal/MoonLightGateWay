@@ -62,7 +62,7 @@ public class ToolsCharacterControler : MonoBehaviour
         CanSelectCheck();
         Marker();
         
-        if (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0) /*|| Input.GetMouseButton(0)*/)
         {
             if (UseToolWorld() == true)
             {
