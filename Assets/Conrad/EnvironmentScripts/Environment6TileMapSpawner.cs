@@ -18,7 +18,7 @@ public class Environment6TileMapSpawner : MonoBehaviour
 
     private void Awake()
     {
-        WorldSpawn = new Vector3(0, 0, 0);
+        WorldSpawn = new Vector3(0, 0, -1.5f);
         tileMapsInScene = new List<GameObject>();
         spawnersInScene = new List<GameObject>();
     }
@@ -26,10 +26,11 @@ public class Environment6TileMapSpawner : MonoBehaviour
     {
         if (isSpawner && collision.tag == "Player")
         {
-            WorldSpawn = new Vector3(0, 0, 0);
+            WorldSpawn = new Vector3(0, 0, -1.5f);
             var myTileObject = Instantiate(tileMapMarker, WorldSpawn, Quaternion.identity);
 
             myTileObject.transform.parent = GridRef.transform;
+            myTileObject.transform.position = WorldSpawn;
         }
         else if (isDestroyer && collision.tag == "Player")
         {

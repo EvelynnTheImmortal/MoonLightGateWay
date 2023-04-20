@@ -133,10 +133,11 @@ public class AreanaGameMode : MonoBehaviour
 
         yield return new WaitForSeconds(29f);
 
-        WorldSpawn = new Vector3(0, 0, 0);
+        WorldSpawn = new Vector3(0, 0, -1.5f);
         var myTileObject = Instantiate(highlightTilemap, WorldSpawn, Quaternion.identity);
 
         myTileObject.transform.parent = GridRef.transform;
+        myTileObject.transform.position = WorldSpawn;
 
         StopCoroutine(lastCoroutine);
 
