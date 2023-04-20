@@ -15901,6 +15901,12 @@ PrefabInstance:
       propertyPath: m_Text
       value: Traveling Merchant
       objectReference: {fileID: 0}
+    - target: {fileID: 114998712481805096, guid: b0fd74578eefff9488a792a07d56c250,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 81206ec023376c14c8d28ac1bd35f474,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0fd74578eefff9488a792a07d56c250, type: 3}
 --- !u!1001 &1362017872
