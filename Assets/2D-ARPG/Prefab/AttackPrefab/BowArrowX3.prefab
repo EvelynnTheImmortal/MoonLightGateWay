@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 82823115872663378}
   m_Layer: 0
   m_Name: BowArrowX3
-  m_TagString: Untagged
+  m_TagString: ChargedAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

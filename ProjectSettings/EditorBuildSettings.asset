@@ -51,7 +51,7 @@ EditorBuildSettings:
     path: Assets/Conrad/Environments/CNEnvironment2.unity
     guid: b42a96ad794a2e1488f4d583c9de072b
   - enabled: 0
-    path: Assets/Brendon/Volcano level.unity
+    path: Assets/Brendon/Failed level.unity
     guid: e87cc5afafa3c224e95d33dd4f735498
   - enabled: 0
     path: Assets/KerimCicak/KCLevel1.unity
