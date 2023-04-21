@@ -21,6 +21,8 @@ public class ToolBarSwitcher : MonoBehaviour
     public AttackTrigger PCAT;
     public Transform farmingPoint;
 
+    public GameObject interactbutton;
+
     //Vector3 pos;
     //public GameObject playerCharacter;
     //[SerializeField] float offsetDistance = 1;
@@ -112,7 +114,10 @@ public class ToolBarSwitcher : MonoBehaviour
                 PlayerUI.SetActive(true);
                 FightingUI.SetActive(false);
                 FarmingUI.SetActive(true);
+                //PCAT.RemoveActivator(gameObject);
+                
                 PCAT.enabled = false;
+                interactbutton.SetActive(false);
 
                 PTCC.enabled = true;
                 PIC.enabled = true;
@@ -127,14 +132,16 @@ public class ToolBarSwitcher : MonoBehaviour
             else if (num == 2)
             {
                 PlayerUI.SetActive(false);
+                //PCAT.RemoveActivator(gameObject);
                 PCAT.enabled = false;
-
+                interactbutton.SetActive(false);
                 PTCC.enabled = false;
                 PIC.enabled = false;
                 PFTBC.enabled = false;
                 PFCIC.enabled = false;
                 if (PFHC != null)
                 {
+                    
                     PFHC.SetActive(false);
                 }
             }

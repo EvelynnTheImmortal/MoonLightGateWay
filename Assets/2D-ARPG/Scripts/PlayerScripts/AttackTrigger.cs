@@ -1189,6 +1189,7 @@ public class AttackTrigger : MonoBehaviour{
 	
 	public void RemoveActivator(GameObject obj){
 		if(obj == actvateObj){
+			Debug.Log("thiswawas");
 			actvateObj = null;
 			actvateMsg = "";
 			buttonText = "";

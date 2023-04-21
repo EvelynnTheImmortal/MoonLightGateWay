@@ -10418,6 +10418,7 @@ MonoBehaviour:
   PFHC: {fileID: 0}
   PCAT: {fileID: 114883541818687620}
   farmingPoint: {fileID: 4049209505775688}
+  interactbutton: {fileID: 1017626590867500}
 --- !u!114 &6001460877674038144
 MonoBehaviour:
   m_ObjectHideFlags: 0
