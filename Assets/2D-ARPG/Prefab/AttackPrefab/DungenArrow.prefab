@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 61335834967431918}
   - component: {fileID: 50481453373467584}
   - component: {fileID: 3978794455851004423}
+  - component: {fileID: -3884067401793783983}
   m_Layer: 0
   m_Name: DungenArrow
   m_TagString: Untagged
@@ -207,3 +208,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   knockbackForce: 10
+--- !u!114 &-3884067401793783983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721866275432140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e16515d7dfabf4f8c0f64ae22dbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyLayer: WallLayer

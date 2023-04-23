@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 95325728634918052}
   - component: {fileID: 114141908447495036}
   - component: {fileID: 114368501277815620}
+  - component: {fileID: 5503259711268714666}
   m_Layer: 0
   m_Name: ChargeSpark
   m_TagString: Untagged
@@ -163,3 +164,16 @@ MonoBehaviour:
     prefab: {fileID: 0}
     maximumSpawn: 1
   fwdPlusAfterSpawn: 0
+--- !u!114 &5503259711268714666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276240589569998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e16515d7dfabf4f8c0f64ae22dbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyLayer: WallLayer

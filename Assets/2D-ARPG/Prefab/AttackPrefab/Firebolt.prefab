@@ -4706,6 +4706,7 @@ GameObject:
   - component: {fileID: 199410320543580104}
   - component: {fileID: 198620293272819956}
   - component: {fileID: 82096410712021088}
+  - component: {fileID: 7776459413213678143}
   m_Layer: 0
   m_Name: Firebolt
   m_TagString: Untagged
@@ -9595,6 +9596,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &7776459413213678143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061450803763840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e16515d7dfabf4f8c0f64ae22dbb42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyLayer: WallLayer
 --- !u!1 &1577638241230798
 GameObject:
   m_ObjectHideFlags: 0
