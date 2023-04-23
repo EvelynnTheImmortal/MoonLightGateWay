@@ -2348,6 +2348,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher (1)
@@ -2515,6 +2519,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher
@@ -4050,6 +4058,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher (2)
@@ -27814,6 +27826,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher (4)
@@ -30216,6 +30232,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher (3)
@@ -34754,6 +34774,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 454745048}
     m_Modifications:
+    - target: {fileID: 1670367371749052, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1864301761632274, guid: 087ef0c207ffbf046b278341888bd399, type: 3}
       propertyPath: m_Name
       value: AllyArcher (5)
