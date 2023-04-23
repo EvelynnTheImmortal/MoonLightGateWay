@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraFollowPlayer2D : MonoBehaviour 
 {
 	public Transform player;
-	public Vector3 offset = new Vector3(0 , 0 , -10);
+	public Vector3 offset = new Vector3(0 , 0 , -5);
 
 	[HideInInspector]
 	public float shakeValue = 0.0f;
