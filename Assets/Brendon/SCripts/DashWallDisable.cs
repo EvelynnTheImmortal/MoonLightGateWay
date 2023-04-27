@@ -10,23 +10,24 @@ public class DashWallDisable : MonoBehaviour
     public TopdownInputController2D tD;
 
     private bool isEPressed = false;
-    //private void Awake()
-    //{
-    //    tD = GameObject.FindGameObjectWithTag("Player").GetComponent<TopdownInputController2D>();
-    //}
+    private void Awake()
+    {
+        tD = GameObject.FindGameObjectWithTag("Player").GetComponent<TopdownInputController2D>();
+    }
 
     private void Update()
     {
-        if (tD == null)
-        {
-            tD = GameObject.FindGameObjectWithTag("Player").GetComponent<TopdownInputController2D>();
-        }
+        //if (tD == null)
+        //{
+        //    tD = GameObject.FindGameObjectWithTag("Player").GetComponent<TopdownInputController2D>();
+        //}
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            isEPressed = true;
-        }
-        if (Input.GetKey(KeyCode.Space) && isEPressed && tD.canDash && Time.timeScale != 0.0f && !GlobalStatus.freezePlayer && !GlobalStatus.freezeAll)
+        //if (Input.GetKeyDown(KeyCode.E))
+        //{
+        //    isEPressed = true;
+        //}
+
+        if (Input.GetKey(KeyCode.Space) && tD.currentStamina > staminaThreshold) /*&& isEPressed && tD.canDash*/ /*&& Time.timeScale != 0.0f && !GlobalStatus.freezePlayer && !GlobalStatus.freezeAll*/
         {
             Debug.Log("this is working");
             //objectToDisable.GetComponent<BoxCollider2D>().enabled = false;
