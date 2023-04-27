@@ -38,7 +38,7 @@ public class ToolsCharacterControler : MonoBehaviour
 
         //aT = GetComponent<AttackTrigger>();
 
-        //markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
+        markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
         //tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
         
         toolBarController = GetComponent<FarmingToolBarController>();
@@ -52,6 +52,7 @@ public class ToolsCharacterControler : MonoBehaviour
         if (markerManager == null)
         {
             markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
+            markerManager = GameObject.FindGameObjectWithTag("TileMarker").GetComponent<MarkerManager>();
         }
         if (tileMapReadController == null)
         {
