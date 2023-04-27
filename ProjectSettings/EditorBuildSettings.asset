@@ -33,6 +33,12 @@ EditorBuildSettings:
     path: Assets/Brendon/BPMainCity2.unity
     guid: 8a9d46fb2ea81734798c00fa993b85bf
   - enabled: 1
+    path: Assets/Brendon/Volcano level 1.unity
+    guid: 42cdc5a21a2a6c74fa13492c87f27ad3
+  - enabled: 1
+    path: Assets/Brendon/Volcano level 2.unity
+    guid: 5d2d288d50ada404087120f024649fc7
+  - enabled: 1
     path: Assets/Conrad/Environments/CNEnvironment5.unity
     guid: b91dce1c3c1848c4a90e589a3d53c969
   - enabled: 1
