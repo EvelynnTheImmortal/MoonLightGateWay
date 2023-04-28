@@ -31,14 +31,22 @@ public class LeverPuzzle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.tag == "Player")
+        {
             switchCavas.SetActive(true);
             isInSquare = true;
+        }
+           
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        switchCavas.SetActive(false);
-        isInSquare = false;
+        if (collision.tag == "Player")
+        {
+            switchCavas.SetActive(false);
+            isInSquare = false;
+        }
+        
     }
 
     private void Update()
