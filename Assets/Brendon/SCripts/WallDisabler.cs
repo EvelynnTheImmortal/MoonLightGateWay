@@ -12,8 +12,9 @@ public class WallDisabler : MonoBehaviour
         // Check if the collider that entered the trigger has the tag we're looking for
         if (collision.gameObject.CompareTag(tagToCheck))
         {
+            otherGameObject.SetActive(false);
             // Turn off the collider on the other game object
-            otherGameObject.GetComponent<BoxCollider2D>().enabled = false;
+            //otherGameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 }
