@@ -39,8 +39,8 @@ public class ToolsCharacterControler : MonoBehaviour
         //aT = GetComponent<AttackTrigger>();
 
         markerManager = GameObject.Find("Grid").GetComponentInChildren<MarkerManager>();
-        //tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
-        
+        tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
+
         toolBarController = GetComponent<FarmingToolBarController>();
         //animator = GameObject.Find("Knight-Player").GetComponentInChildren<Animator>();
 
