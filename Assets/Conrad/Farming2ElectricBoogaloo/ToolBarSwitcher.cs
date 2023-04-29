@@ -8,6 +8,7 @@ public class ToolBarSwitcher : MonoBehaviour
     public GameObject FightingUI;
     public GameObject FarmingUI;
     public GameObject PlayerUI;
+    public GameObject farmingToolBarUI;
 
     public ToolsCharacterControler PTCC;
     public FarmingInventoryController PIC;
@@ -36,7 +37,7 @@ public class ToolBarSwitcher : MonoBehaviour
         FightingUI.SetActive(true);
         FarmingUI.SetActive(false);
         PCAT.enabled = true;
-
+        farmingToolBarUI.SetActive(false);
         PTCC.enabled = false;
         PIC.enabled = false;
         PFTBC.enabled = false;
@@ -48,7 +49,7 @@ public class ToolBarSwitcher : MonoBehaviour
 
 
 
-        farmingPoint.position = transform.position;
+         farmingPoint.position = transform.position;
          farmingPoint.rotation = transform.rotation;
          
             
@@ -94,11 +95,13 @@ public class ToolBarSwitcher : MonoBehaviour
 
             if (num == 0)
             {
+
                 PlayerUI.SetActive(true);
                 FightingUI.SetActive(true);
                 FarmingUI.SetActive(false);
+                farmingToolBarUI.SetActive(false);
                 PCAT.enabled = true;
-
+                
                 PTCC.enabled = false;
                 PIC.enabled = false;
                 PFTBC.enabled = false;
@@ -114,8 +117,9 @@ public class ToolBarSwitcher : MonoBehaviour
                 PlayerUI.SetActive(true);
                 FightingUI.SetActive(false);
                 FarmingUI.SetActive(true);
-                //PCAT.RemoveActivator(gameObject);
+                farmingToolBarUI.SetActive(true);
                 
+
                 PCAT.enabled = false;
                 interactbutton.SetActive(false);
 
@@ -132,7 +136,7 @@ public class ToolBarSwitcher : MonoBehaviour
             else if (num == 2)
             {
                 PlayerUI.SetActive(false);
-                //PCAT.RemoveActivator(gameObject);
+                farmingToolBarUI.SetActive(false);
                 PCAT.enabled = false;
                 interactbutton.SetActive(false);
                 PTCC.enabled = false;

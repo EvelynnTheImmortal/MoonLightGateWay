@@ -58,6 +58,10 @@ public class ToolsCharacterControler : MonoBehaviour
         {
             tileMapReadController = GameObject.Find("TileMapInterface").GetComponent<TileMapReadController>();
         }
+        if (toolBarController == null)
+        {
+            toolBarController = GetComponent<FarmingToolBarController>();
+        }
 
         SelectTile();
         CanSelectCheck();
