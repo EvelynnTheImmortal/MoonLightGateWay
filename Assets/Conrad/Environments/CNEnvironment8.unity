@@ -368,13 +368,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236011239}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.46, y: 9.5, z: 0}
+  m_LocalPosition: {x: 3.46, y: 9.5, z: -2}
   m_LocalScale: {x: 3.5, y: 3.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 234785402}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &236011241
 Animator:
@@ -461,7 +461,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -472,7 +472,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4, y: 0.5}
+  m_Size: {x: 0.4, y: 0.2}
   m_EdgeRadius: 0
 --- !u!1001 &326555793
 PrefabInstance:
@@ -494,7 +494,7 @@ PrefabInstance:
     - target: {fileID: 8214013436464024030, guid: 684f1a3d50322a141affa5c2e997c1fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8214013436464024030, guid: 684f1a3d50322a141affa5c2e997c1fa,
         type: 3}
@@ -582,345 +582,6 @@ MonoBehaviour:
   count: 1
   spread: 2
   probability: 0.5
---- !u!1 &329142365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 329142372}
-  - component: {fileID: 329142371}
-  - component: {fileID: 329142370}
-  - component: {fileID: 329142369}
-  - component: {fileID: 329142368}
-  - component: {fileID: 329142367}
-  - component: {fileID: 329142366}
-  m_Layer: 0
-  m_Name: TP (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &329142366
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 6}
-  m_EdgeRadius: 0
---- !u!114 &329142367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 16
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 1
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: CNEnvironment4
-  stringVar2: SP2
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &329142368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 1.2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &329142369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 26
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 0, g: 0, b: 0, a: 0}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 1557992650}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &329142370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 7
-  message: 
-  target: {fileID: 1557992652}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &329142371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainModel: {fileID: 1557992652}
-  runEvent: 0
-  startCondition: 2
-  lookNpc: 0
-  lookAtPlayer: 0
-  freezePlayerDuringEvent: 1
-  lockCam: 0
-  closePlayerUi: 1
-  buttonTxt: Check
-  eventRunning: 0
-  player: {fileID: 0}
-  enter: 0
---- !u!4 &329142372
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329142365}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.57, y: -1.57, z: -1.2422233}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &346315060
 GameObject:
   m_ObjectHideFlags: 0
@@ -2542,6 +2203,190 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &365971734
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 365971738}
+  - component: {fileID: 365971737}
+  - component: {fileID: 365971736}
+  - component: {fileID: 365971735}
+  m_Layer: 0
+  m_Name: StartEvent (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &365971735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365971734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Cozy Cottage
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1129081123}
+  showText: {fileID: 137728512}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &365971736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365971734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Well, the house should be around here somewhere...
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1491517335}
+  showText: {fileID: 2026099919}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &365971737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365971734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainModel: {fileID: 0}
+  runEvent: 0
+  startCondition: 4
+  lookNpc: 0
+  lookAtPlayer: 0
+  freezePlayerDuringEvent: 1
+  lockCam: 0
+  closePlayerUi: 1
+  buttonTxt: Check
+  eventRunning: 0
+  player: {fileID: 0}
+  enter: 0
+--- !u!4 &365971738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 365971734}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &423411047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2710,7 +2555,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &452899515
 BoxCollider2D:
@@ -13842,7 +13687,7 @@ PrefabInstance:
     - target: {fileID: 8214013436464024030, guid: 684f1a3d50322a141affa5c2e997c1fa,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8214013436464024030, guid: 684f1a3d50322a141affa5c2e997c1fa,
         type: 3}
@@ -14480,7 +14325,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &773428405
+--- !u!1 &806200633
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14488,29 +14333,93 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 773428413}
-  - component: {fileID: 773428412}
-  - component: {fileID: 773428411}
-  - component: {fileID: 773428410}
-  - component: {fileID: 773428409}
-  - component: {fileID: 773428408}
-  - component: {fileID: 773428407}
-  - component: {fileID: 773428406}
-  - component: {fileID: 773428414}
+  - component: {fileID: 806200642}
+  - component: {fileID: 806200641}
+  - component: {fileID: 806200640}
+  - component: {fileID: 806200639}
+  - component: {fileID: 806200638}
+  - component: {fileID: 806200637}
+  - component: {fileID: 806200636}
+  - component: {fileID: 806200635}
+  - component: {fileID: 806200634}
   m_Layer: 0
-  m_Name: TutorialGiver1
+  m_Name: TutorialGiver1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &773428406
+--- !u!114 &806200634
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Oh, and dont forget, to harvest just use an empty hand and the seeds will
+    come out.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1491517335}
+  showText: {fileID: 2026099919}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &806200635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
@@ -14567,20 +14476,20 @@ MonoBehaviour:
   noteId: 
   ev1: {fileID: 0}
   ev2: {fileID: 0}
---- !u!114 &773428407
+--- !u!114 &806200636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  message: They should start growing in no time!
+  message: The seeds should start growing in no time!
   target: {fileID: 0}
   target2: {fileID: 0}
   targetIsPlayer: 0
@@ -14630,13 +14539,13 @@ MonoBehaviour:
   noteId: 
   ev1: {fileID: 0}
   ev2: {fileID: 0}
---- !u!114 &773428408
+--- !u!114 &806200637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
@@ -14694,20 +14603,20 @@ MonoBehaviour:
   noteId: 
   ev1: {fileID: 0}
   ev2: {fileID: 0}
---- !u!114 &773428409
+--- !u!114 &806200638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  message: 'If you want to farm all you need to do is press the "TAB" key '
+  message: If you want to farm all you need to do is press the "TAB" key.
   target: {fileID: 0}
   target2: {fileID: 0}
   targetIsPlayer: 0
@@ -14757,20 +14666,20 @@ MonoBehaviour:
   noteId: 
   ev1: {fileID: 0}
   ev2: {fileID: 0}
---- !u!114 &773428410
+--- !u!114 &806200639
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
-  message: Hi there! Im from the vilage to help you out.
+  message: Hi there! Im from the village to help you out.
   target: {fileID: 0}
   target2: {fileID: 0}
   targetIsPlayer: 0
@@ -14820,13 +14729,13 @@ MonoBehaviour:
   noteId: 
   ev1: {fileID: 0}
   ev2: {fileID: 0}
---- !u!114 &773428411
+--- !u!114 &806200640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
@@ -14844,13 +14753,13 @@ MonoBehaviour:
   eventRunning: 0
   player: {fileID: 0}
   enter: 0
---- !u!58 &773428412
+--- !u!58 &806200641
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -14860,85 +14769,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1
---- !u!4 &773428413
+--- !u!4 &806200642
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
+  m_GameObject: {fileID: 806200633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.46, y: 9.5, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &773428414
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 773428405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Oh, and dont forget, to harvest just use an empty hand and the seeds will
-    come out in no time
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1491517335}
-  showText: {fileID: 2026099919}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
 --- !u!1 &842186135
 GameObject:
   m_ObjectHideFlags: 0
@@ -25014,7 +24859,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993900671
 GameObject:
@@ -41209,7 +41054,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1400620605
 GameObject:
@@ -41920,190 +41765,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2012094124
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2012094128}
-  - component: {fileID: 2012094127}
-  - component: {fileID: 2012094126}
-  - component: {fileID: 2012094125}
-  m_Layer: 0
-  m_Name: StartEvent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2012094125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012094124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Cozy Cottage
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1129081123}
-  showText: {fileID: 137728512}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &2012094126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012094124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: The house should be around here somewhere...
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1491517335}
-  showText: {fileID: 2026099919}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &2012094127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012094124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainModel: {fileID: 0}
-  runEvent: 0
-  startCondition: 4
-  lookNpc: 0
-  lookAtPlayer: 0
-  freezePlayerDuringEvent: 1
-  lockCam: 0
-  closePlayerUi: 1
-  buttonTxt: Check
-  eventRunning: 0
-  player: {fileID: 0}
-  enter: 0
---- !u!4 &2012094128
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012094124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026099917
 GameObject:

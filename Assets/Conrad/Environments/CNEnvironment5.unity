@@ -123,6 +123,318 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &134172077
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134172083}
+  - component: {fileID: 134172082}
+  - component: {fileID: 134172081}
+  - component: {fileID: 134172080}
+  - component: {fileID: 134172079}
+  - component: {fileID: 134172078}
+  m_Layer: 0
+  m_Name: StartEvent (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &134172078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 9
+  message: 
+  target: {fileID: 134172083}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &134172079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Ravine's End
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1159738531}
+  showText: {fileID: 495488132}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &134172080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: At least if the castle archives are correct.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1481088382}
+  showText: {fileID: 470169443}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &134172081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: The seed that will save us all from famine should be here, somewhere.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1481088382}
+  showText: {fileID: 470169443}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &134172082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainModel: {fileID: 0}
+  runEvent: 0
+  startCondition: 4
+  lookNpc: 0
+  lookAtPlayer: 0
+  freezePlayerDuringEvent: 1
+  lockCam: 0
+  closePlayerUi: 1
+  buttonTxt: Check
+  eventRunning: 0
+  player: {fileID: 0}
+  enter: 0
+--- !u!4 &134172083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134172077}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &176029106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -549,7 +861,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &633902914
 PrefabInstance:
@@ -609,7 +921,7 @@ PrefabInstance:
     - target: {fileID: 114256888414227794, guid: 00b71c4584cd4a5469a379b3d5451557,
         type: 3}
       propertyPath: duration
-      value: 1e+21
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00b71c4584cd4a5469a379b3d5451557, type: 3}
@@ -760,7 +1072,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4634409233231920, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4634409233231920, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19254,473 +19566,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77a44efd769ae3a429282aada2435284, type: 3}
---- !u!1 &1068723334
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1068723343}
-  - component: {fileID: 1068723342}
-  - component: {fileID: 1068723341}
-  - component: {fileID: 1068723340}
-  - component: {fileID: 1068723339}
-  - component: {fileID: 1068723338}
-  - component: {fileID: 1068723337}
-  - component: {fileID: 1068723336}
-  - component: {fileID: 1068723335}
-  m_Layer: 0
-  m_Name: TP (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &1068723335
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2}
-  m_EdgeRadius: 0
---- !u!114 &1068723336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 16
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 1
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: CNEnvironment6
-  stringVar2: SP1
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 1.2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 26
-  message: 
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 0, g: 0, b: 0, a: 0}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 1160990682}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 7
-  message: 
-  target: {fileID: 1160990684}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: I wonder whats inside.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1481088382}
-  showText: {fileID: 470169443}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Hmm... this looks newly formed.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1481088382}
-  showText: {fileID: 470169443}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1068723342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainModel: {fileID: 0}
-  runEvent: 0
-  startCondition: 2
-  lookNpc: 0
-  lookAtPlayer: 0
-  freezePlayerDuringEvent: 1
-  lockCam: 0
-  closePlayerUi: 1
-  buttonTxt: Check
-  eventRunning: 0
-  player: {fileID: 0}
-  enter: 0
---- !u!4 &1068723343
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068723334}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.03, y: 8.06, z: -1.2422233}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 16
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1104694358
 GameObject:
   m_ObjectHideFlags: 0
@@ -19847,7 +19692,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159738529
 GameObject:
@@ -20346,7 +20191,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1393228969
 GameObject:
@@ -20685,7 +20530,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1420039676
 GameObject:
@@ -20813,7 +20658,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1436551540
 GameObject:
@@ -20925,7 +20770,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1436551543
 CircleCollider2D:
@@ -21125,6 +20970,473 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0e56ec0cb85255479d7df94e86db164, type: 3}
+--- !u!1 &1547207493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547207502}
+  - component: {fileID: 1547207501}
+  - component: {fileID: 1547207500}
+  - component: {fileID: 1547207499}
+  - component: {fileID: 1547207498}
+  - component: {fileID: 1547207497}
+  - component: {fileID: 1547207496}
+  - component: {fileID: 1547207495}
+  - component: {fileID: 1547207494}
+  m_Layer: 0
+  m_Name: TP (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1547207494
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &1547207495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 16
+  message: 
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 1
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: CNEnvironment6
+  stringVar2: SP1
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 1
+  message: 
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 1.2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 26
+  message: 
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 0, g: 0, b: 0, a: 0}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 1160990682}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 7
+  message: 
+  target: {fileID: 1160990684}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 0}
+  showText: {fileID: 0}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: I hope it's inside, for all our sakes.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1481088382}
+  showText: {fileID: 470169443}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Hmm... this looks man made.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1481088382}
+  showText: {fileID: 470169443}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1547207501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainModel: {fileID: 0}
+  runEvent: 0
+  startCondition: 2
+  lookNpc: 0
+  lookAtPlayer: 0
+  freezePlayerDuringEvent: 1
+  lockCam: 0
+  closePlayerUi: 1
+  buttonTxt: Check
+  eventRunning: 0
+  player: {fileID: 0}
+  enter: 0
+--- !u!4 &1547207502
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547207493}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 53.03, y: 8.06, z: -1.2422233}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1575578415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81758,318 +82070,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!1 &1764370307
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1764370313}
-  - component: {fileID: 1764370312}
-  - component: {fileID: 1764370310}
-  - component: {fileID: 1764370309}
-  - component: {fileID: 1764370308}
-  - component: {fileID: 1764370314}
-  m_Layer: 0
-  m_Name: StartEvent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1764370308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Ravine's End
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1159738531}
-  showText: {fileID: 495488132}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1764370309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: At least if the archives are correct.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1481088382}
-  showText: {fileID: 470169443}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1764370310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Well, something must be here.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1481088382}
-  showText: {fileID: 470169443}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1764370312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainModel: {fileID: 0}
-  runEvent: 0
-  startCondition: 4
-  lookNpc: 0
-  lookAtPlayer: 0
-  freezePlayerDuringEvent: 1
-  lockCam: 0
-  closePlayerUi: 1
-  buttonTxt: Check
-  eventRunning: 0
-  player: {fileID: 0}
-  enter: 0
---- !u!4 &1764370313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1764370314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764370307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 9
-  message: 
-  target: {fileID: 1764370313}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 0}
-  showText: {fileID: 0}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
 --- !u!1 &1790279718
 GameObject:
   m_ObjectHideFlags: 0

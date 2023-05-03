@@ -46485,7 +46485,7 @@ Transform:
   - {fileID: 714911807}
   - {fileID: 2070596460}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &138622945
 GameObject:
@@ -49314,7 +49314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4634409233231920, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4634409233231920, guid: a19afec8482aedb42b757bb048dbab87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50863,7 +50863,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &811819038
 GameObject:
@@ -60968,6 +60968,254 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1031649731
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031649736}
+  - component: {fileID: 1031649735}
+  - component: {fileID: 1031649734}
+  - component: {fileID: 1031649733}
+  - component: {fileID: 1031649732}
+  m_Layer: 0
+  m_Name: StartEvent (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1031649732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031649731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: Earthen Machine
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 893753298}
+  showText: {fileID: 418532585}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1031649733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031649731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: 'I hope the seed is in here somewhere. '
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1236128596}
+  showText: {fileID: 1355756942}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1031649734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031649731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  message: This is the place.
+  target: {fileID: 0}
+  target2: {fileID: 0}
+  targetIsPlayer: 0
+  floatVar: 2
+  floatVar2: 0
+  floatVar3: 1
+  floatVar4: 50
+  floatVar5: 50
+  vector3Var: {x: 0, y: 0, z: 0}
+  vector3Var2: {x: 0, y: 0, z: 0}
+  vector2Var: {x: 100, y: 100}
+  objectVar: {fileID: 0}
+  eventVar: {fileID: 0}
+  msgString: 
+  msgString2: 
+  intVar: 0
+  intVar2: 0
+  intVar3: 0
+  intVar4: 0
+  boolVar: 0
+  boolVar2: 0
+  boolVar3: 0
+  boolVar4: 1
+  boolVar5: 0
+  sendBack: 0
+  stopMoving: 0
+  animClip: {fileID: 0}
+  audiClip: {fileID: 0}
+  stringVar: 
+  stringVar2: 
+  colorVar: {r: 1, g: 1, b: 1, a: 1}
+  colorVar2: {r: 0, g: 0, b: 0, a: 1}
+  colorVar3: {r: 1, g: 1, b: 1, a: 1}
+  matVar: {fileID: 0}
+  lightVar: {fileID: 0}
+  lightIntesity: 0.5
+  imageVar: {fileID: 0}
+  imageVar2: {fileID: 0}
+  textBoxVar: {fileID: 1236128596}
+  showText: {fileID: 1355756942}
+  nameText: {fileID: 0}
+  spriteVar: {fileID: 0}
+  math: 0
+  condi: 0
+  condiForm: 0
+  note: 
+  noteId: 
+  ev1: {fileID: 0}
+  ev2: {fileID: 0}
+--- !u!114 &1031649735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031649731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainModel: {fileID: 0}
+  runEvent: 0
+  startCondition: 4
+  lookNpc: 0
+  lookAtPlayer: 0
+  freezePlayerDuringEvent: 1
+  lockCam: 0
+  closePlayerUi: 1
+  buttonTxt: Check
+  eventRunning: 0
+  player: {fileID: 0}
+  enter: 0
+--- !u!4 &1031649736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031649731}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1044117181
 GameObject:
   m_ObjectHideFlags: 0
@@ -72308,7 +72556,7 @@ Transform:
   m_Children:
   - {fileID: 1541096709}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1153622825
 GameObject:
@@ -72523,7 +72771,7 @@ Transform:
   m_Children:
   - {fileID: 2089839780}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1174585590
 GameObject:
@@ -72779,7 +73027,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1232167349
 GameObject:
@@ -74424,7 +74672,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360326050
 GameObject:
@@ -81378,254 +81626,6 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
---- !u!1 &1654924046
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1654924052}
-  - component: {fileID: 1654924051}
-  - component: {fileID: 1654924049}
-  - component: {fileID: 1654924048}
-  - component: {fileID: 1654924047}
-  m_Layer: 0
-  m_Name: StartEvent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1654924047
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654924046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Earthen Machine
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 893753298}
-  showText: {fileID: 418532585}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1654924048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654924046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Hope its the right place.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1236128596}
-  showText: {fileID: 1355756942}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1654924049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654924046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e737fc0a21e46e34d886be552277668e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
-  message: Well, this is quite old.
-  target: {fileID: 0}
-  target2: {fileID: 0}
-  targetIsPlayer: 0
-  floatVar: 2
-  floatVar2: 0
-  floatVar3: 1
-  floatVar4: 50
-  floatVar5: 50
-  vector3Var: {x: 0, y: 0, z: 0}
-  vector3Var2: {x: 0, y: 0, z: 0}
-  vector2Var: {x: 100, y: 100}
-  objectVar: {fileID: 0}
-  eventVar: {fileID: 0}
-  msgString: 
-  msgString2: 
-  intVar: 0
-  intVar2: 0
-  intVar3: 0
-  intVar4: 0
-  boolVar: 0
-  boolVar2: 0
-  boolVar3: 0
-  boolVar4: 1
-  boolVar5: 0
-  sendBack: 0
-  stopMoving: 0
-  animClip: {fileID: 0}
-  audiClip: {fileID: 0}
-  stringVar: 
-  stringVar2: 
-  colorVar: {r: 1, g: 1, b: 1, a: 1}
-  colorVar2: {r: 0, g: 0, b: 0, a: 1}
-  colorVar3: {r: 1, g: 1, b: 1, a: 1}
-  matVar: {fileID: 0}
-  lightVar: {fileID: 0}
-  lightIntesity: 0.5
-  imageVar: {fileID: 0}
-  imageVar2: {fileID: 0}
-  textBoxVar: {fileID: 1236128596}
-  showText: {fileID: 1355756942}
-  nameText: {fileID: 0}
-  spriteVar: {fileID: 0}
-  math: 0
-  condi: 0
-  condiForm: 0
-  note: 
-  noteId: 
-  ev1: {fileID: 0}
-  ev2: {fileID: 0}
---- !u!114 &1654924051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654924046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fab40ad09a87784aa98ec86b839486f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainModel: {fileID: 0}
-  runEvent: 0
-  startCondition: 4
-  lookNpc: 0
-  lookAtPlayer: 0
-  freezePlayerDuringEvent: 1
-  lockCam: 0
-  closePlayerUi: 1
-  buttonTxt: Check
-  eventRunning: 0
-  player: {fileID: 0}
-  enter: 0
---- !u!4 &1654924052
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654924046}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1660531316
 GameObject:
   m_ObjectHideFlags: 0
@@ -81662,7 +81662,7 @@ Transform:
   - {fileID: 138622946}
   - {fileID: 773670761}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1706484793
 GameObject:
@@ -82083,7 +82083,7 @@ PrefabInstance:
     - target: {fileID: 7857334626551741543, guid: 0ecec6c7f4ce278408b4426bfde18786,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7857334626551741543, guid: 0ecec6c7f4ce278408b4426bfde18786,
         type: 3}
@@ -82754,7 +82754,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1896891204
 GameObject:
